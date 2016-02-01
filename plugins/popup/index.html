@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="./magnific/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="./magnific/jquery.magnific-popup.js"></script>
+
+</head>
+<body>
+
+<a href="http://i.telegraph.co.uk/multimedia/archive/03171/mr_bean_edit_3171783b.jpg" class="image-link">Mr Bean</a>
+
+
+
+<a class="test-popup-link" href="path-to-image.jpg">Open popup</a>
+
+
+<ul class="parent-container">
+	<li><a href="http://i.telegraph.co.uk/multimedia/archive/03171/mr_bean_edit_3171783b.jpg">jxfbjfb</a></li>
+	<li><a href="http://media.npr.org/assets/img/2013/02/07/mrbean072way_wide-bfaafef77349a2c9101d90e3eabe182a7fd1875f.jpg?s=1400">jxfbjfb</a></li>
+	<li><a href="https://yt3.ggpht.com/-FvBjR0DHn0c/AAAAAAAAAAI/AAAAAAAAAAA/1X7Fl-w2PUw/s900-c-k-no/photo.jpg">jxfbjfb</a></li>
+	<li><a href="http://www.elasperger.org/wp-content/uploads/2013/10/atkinson-says-goodbye-to-beloved-character-mr-bean1.jpg">jxfbjfb</a></li>
+</ul>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.image-link').magnificPopup({type:'image'});
+
+		$('.test-popup-link').magnificPopup({
+		  type: 'image'
+		  // other options
+		});
+
+		$('.parent-container').magnificPopup({
+		  delegate: 'a', // child items selector, by clicking on it popup will open
+		  type: 'image',
+		  gallery: {enabled: true}
+		  // other options
+		});
+
+});
+</script>
+</body>
+</html>

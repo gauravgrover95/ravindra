@@ -1,0 +1,2614 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-watch',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.3.12
+3 info using node@v5.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData grunt-contrib-watch@^0.6.1
+8 silly fetchNamedPackageData grunt-contrib-watch
+9 silly mapToRegistry name grunt-contrib-watch
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-watch
+13 verbose request uri https://registry.npmjs.org/grunt-contrib-watch
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 5:05:38 PM
+16 verbose request id e5b139f592b66391
+17 verbose etag "2JCAMI85JSM2RMZ5UI5K8B72"
+18 http request GET https://registry.npmjs.org/grunt-contrib-watch
+19 http 304 https://registry.npmjs.org/grunt-contrib-watch
+20 verbose headers { date: 'Sat, 23 Jan 2016 11:35:39 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   etag: '"2JCAMI85JSM2RMZ5UI5K8B72"',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1453548939.355666,VS0,VE970',
+20 verbose headers   vary: 'Accept' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Sat, 23 Jan 2016 11:35:39 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     etag: '"2JCAMI85JSM2RMZ5UI5K8B72"',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-sin6923-SIN',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1453548939.355666,VS0,VE970',
+21 silly get     vary: 'Accept' } ]
+22 verbose etag https://registry.npmjs.org/grunt-contrib-watch from cache
+23 verbose get saving grunt-contrib-watch to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\grunt-contrib-watch\.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule grunt-contrib-watch@0.6.1 checking installable status
+37 silly cache add args [ 'grunt-contrib-watch@^0.6.1', null ]
+38 verbose cache add spec grunt-contrib-watch@^0.6.1
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'grunt-contrib-watch@^0.6.1',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'grunt-contrib-watch',
+39 silly cache add   rawSpec: '^0.6.1',
+39 silly cache add   spec: '>=0.6.1 <0.7.0',
+39 silly cache add   type: 'range' }
+40 silly addNamed grunt-contrib-watch@>=0.6.1 <0.7.0
+41 verbose addNamed ">=0.6.1 <0.7.0" is a valid semver range for grunt-contrib-watch
+42 silly addNameRange { name: 'grunt-contrib-watch',
+42 silly addNameRange   range: '>=0.6.1 <0.7.0',
+42 silly addNameRange   hasData: false }
+43 silly mapToRegistry name grunt-contrib-watch
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-watch
+47 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-watch not in flight; fetching
+48 verbose get https://registry.npmjs.org/grunt-contrib-watch not expired, no request
+49 silly addNameRange number 2 { name: 'grunt-contrib-watch',
+49 silly addNameRange   range: '>=0.6.1 <0.7.0',
+49 silly addNameRange   hasData: true }
+50 silly addNameRange versions [ 'grunt-contrib-watch',
+50 silly addNameRange   [ '0.1.0',
+50 silly addNameRange     '0.1.1',
+50 silly addNameRange     '0.1.2',
+50 silly addNameRange     '0.1.3',
+50 silly addNameRange     '0.1.4',
+50 silly addNameRange     '0.2.0',
+50 silly addNameRange     '0.3.0',
+50 silly addNameRange     '0.3.1',
+50 silly addNameRange     '0.4.0',
+50 silly addNameRange     '0.4.1',
+50 silly addNameRange     '0.4.2',
+50 silly addNameRange     '0.4.3',
+50 silly addNameRange     '0.4.4',
+50 silly addNameRange     '0.5.0',
+50 silly addNameRange     '0.5.1',
+50 silly addNameRange     '0.5.2',
+50 silly addNameRange     '0.5.3',
+50 silly addNameRange     '0.6.0',
+50 silly addNameRange     '0.6.1',
+50 silly addNameRange     '0.2.0-a',
+50 silly addNameRange     '0.2.0-rc5',
+50 silly addNameRange     '0.2.0-rc7' ] ]
+51 silly addNamed grunt-contrib-watch@0.6.1
+52 verbose addNamed "0.6.1" is a plain semver version for grunt-contrib-watch
+53 silly cache afterAdd grunt-contrib-watch@0.6.1
+54 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\grunt-contrib-watch\0.6.1\package\package.json not in flight; writing
+55 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\grunt-contrib-watch\0.6.1\package\package.json written
+56 silly fetchNamedPackageData gaze
+57 silly mapToRegistry name gaze
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/gaze
+61 silly fetchNamedPackageData tiny-lr-fork
+62 silly mapToRegistry name tiny-lr-fork
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/tiny-lr-fork
+66 silly fetchNamedPackageData lodash
+67 silly mapToRegistry name lodash
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/lodash
+71 silly fetchNamedPackageData async
+72 silly mapToRegistry name async
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npmjs.org/
+75 silly mapToRegistry uri https://registry.npmjs.org/async
+76 verbose request uri https://registry.npmjs.org/tiny-lr-fork
+77 verbose request no auth needed
+78 info attempt registry request try #1 at 5:05:41 PM
+79 verbose etag "9ATLEQSLOKA6WCFFKVWB9Y5GI"
+80 http request GET https://registry.npmjs.org/tiny-lr-fork
+81 verbose request uri https://registry.npmjs.org/gaze
+82 verbose request no auth needed
+83 info attempt registry request try #1 at 5:05:41 PM
+84 verbose etag "4RADQSZ3ZS1CZ4O9MDH61O231"
+85 http request GET https://registry.npmjs.org/gaze
+86 verbose request uri https://registry.npmjs.org/async
+87 verbose request no auth needed
+88 info attempt registry request try #1 at 5:05:41 PM
+89 verbose etag "CD0X62EKVPR0BNRLJTDJOZ1CT"
+90 http request GET https://registry.npmjs.org/async
+91 verbose request uri https://registry.npmjs.org/lodash
+92 verbose request no auth needed
+93 info attempt registry request try #1 at 5:05:41 PM
+94 verbose etag "CTDEA53T30HYQ337RKFC3QX31"
+95 http request GET https://registry.npmjs.org/lodash
+96 http 304 https://registry.npmjs.org/tiny-lr-fork
+97 verbose headers { date: 'Sat, 23 Jan 2016 11:35:41 GMT',
+97 verbose headers   via: '1.1 varnish',
+97 verbose headers   'cache-control': 'max-age=300',
+97 verbose headers   etag: '"9ATLEQSLOKA6WCFFKVWB9Y5GI"',
+97 verbose headers   age: '230',
+97 verbose headers   connection: 'keep-alive',
+97 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+97 verbose headers   'x-cache': 'HIT',
+97 verbose headers   'x-cache-hits': '1',
+97 verbose headers   'x-timer': 'S1453548941.879774,VS0,VE0',
+97 verbose headers   vary: 'Accept' }
+98 silly get cb [ 304,
+98 silly get   { date: 'Sat, 23 Jan 2016 11:35:41 GMT',
+98 silly get     via: '1.1 varnish',
+98 silly get     'cache-control': 'max-age=300',
+98 silly get     etag: '"9ATLEQSLOKA6WCFFKVWB9Y5GI"',
+98 silly get     age: '230',
+98 silly get     connection: 'keep-alive',
+98 silly get     'x-served-by': 'cache-sin6927-SIN',
+98 silly get     'x-cache': 'HIT',
+98 silly get     'x-cache-hits': '1',
+98 silly get     'x-timer': 'S1453548941.879774,VS0,VE0',
+98 silly get     vary: 'Accept' } ]
+99 verbose etag https://registry.npmjs.org/tiny-lr-fork from cache
+100 verbose get saving tiny-lr-fork to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\tiny-lr-fork\.cache.json
+101 http 304 https://registry.npmjs.org/lodash
+102 verbose headers { date: 'Sat, 23 Jan 2016 11:35:41 GMT',
+102 verbose headers   via: '1.1 varnish',
+102 verbose headers   'cache-control': 'max-age=300',
+102 verbose headers   etag: '"CTDEA53T30HYQ337RKFC3QX31"',
+102 verbose headers   age: '100',
+102 verbose headers   connection: 'keep-alive',
+102 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+102 verbose headers   'x-cache': 'HIT',
+102 verbose headers   'x-cache-hits': '28',
+102 verbose headers   'x-timer': 'S1453548941.888827,VS0,VE0',
+102 verbose headers   vary: 'Accept' }
+103 silly get cb [ 304,
+103 silly get   { date: 'Sat, 23 Jan 2016 11:35:41 GMT',
+103 silly get     via: '1.1 varnish',
+103 silly get     'cache-control': 'max-age=300',
+103 silly get     etag: '"CTDEA53T30HYQ337RKFC3QX31"',
+103 silly get     age: '100',
+103 silly get     connection: 'keep-alive',
+103 silly get     'x-served-by': 'cache-sin6920-SIN',
+103 silly get     'x-cache': 'HIT',
+103 silly get     'x-cache-hits': '28',
+103 silly get     'x-timer': 'S1453548941.888827,VS0,VE0',
+103 silly get     vary: 'Accept' } ]
+104 verbose etag https://registry.npmjs.org/lodash from cache
+105 verbose get saving lodash to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\lodash\.cache.json
+106 silly resolveWithNewModule lodash@2.4.2 checking installable status
+107 silly cache add args [ 'lodash@~2.4.1', null ]
+108 verbose cache add spec lodash@~2.4.1
+109 silly cache add parsed spec Result {
+109 silly cache add   raw: 'lodash@~2.4.1',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'lodash',
+109 silly cache add   rawSpec: '~2.4.1',
+109 silly cache add   spec: '>=2.4.1 <2.5.0',
+109 silly cache add   type: 'range' }
+110 silly addNamed lodash@>=2.4.1 <2.5.0
+111 verbose addNamed ">=2.4.1 <2.5.0" is a valid semver range for lodash
+112 silly addNameRange { name: 'lodash', range: '>=2.4.1 <2.5.0', hasData: false }
+113 silly mapToRegistry name lodash
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/lodash
+117 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+118 http 304 https://registry.npmjs.org/async
+119 verbose headers { date: 'Sat, 23 Jan 2016 11:35:41 GMT',
+119 verbose headers   via: '1.1 varnish',
+119 verbose headers   'cache-control': 'max-age=300',
+119 verbose headers   etag: '"CD0X62EKVPR0BNRLJTDJOZ1CT"',
+119 verbose headers   age: '67',
+119 verbose headers   connection: 'keep-alive',
+119 verbose headers   'x-served-by': 'cache-sin6925-SIN',
+119 verbose headers   'x-cache': 'HIT',
+119 verbose headers   'x-cache-hits': '5',
+119 verbose headers   'x-timer': 'S1453548941.911452,VS0,VE0',
+119 verbose headers   vary: 'Accept' }
+120 silly get cb [ 304,
+120 silly get   { date: 'Sat, 23 Jan 2016 11:35:41 GMT',
+120 silly get     via: '1.1 varnish',
+120 silly get     'cache-control': 'max-age=300',
+120 silly get     etag: '"CD0X62EKVPR0BNRLJTDJOZ1CT"',
+120 silly get     age: '67',
+120 silly get     connection: 'keep-alive',
+120 silly get     'x-served-by': 'cache-sin6925-SIN',
+120 silly get     'x-cache': 'HIT',
+120 silly get     'x-cache-hits': '5',
+120 silly get     'x-timer': 'S1453548941.911452,VS0,VE0',
+120 silly get     vary: 'Accept' } ]
+121 verbose etag https://registry.npmjs.org/async from cache
+122 verbose get saving async to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\async\.cache.json
+123 silly resolveWithNewModule tiny-lr-fork@0.0.5 checking installable status
+124 silly cache add args [ 'tiny-lr-fork@0.0.5', null ]
+125 verbose cache add spec tiny-lr-fork@0.0.5
+126 silly cache add parsed spec Result {
+126 silly cache add   raw: 'tiny-lr-fork@0.0.5',
+126 silly cache add   scope: null,
+126 silly cache add   name: 'tiny-lr-fork',
+126 silly cache add   rawSpec: '0.0.5',
+126 silly cache add   spec: '0.0.5',
+126 silly cache add   type: 'version' }
+127 silly addNamed tiny-lr-fork@0.0.5
+128 verbose addNamed "0.0.5" is a plain semver version for tiny-lr-fork
+129 silly mapToRegistry name tiny-lr-fork
+130 silly mapToRegistry using default registry
+131 silly mapToRegistry registry https://registry.npmjs.org/
+132 silly mapToRegistry uri https://registry.npmjs.org/tiny-lr-fork
+133 verbose addNameVersion registry:https://registry.npmjs.org/tiny-lr-fork not in flight; fetching
+134 verbose get https://registry.npmjs.org/lodash not expired, no request
+135 silly addNameRange number 2 { name: 'lodash', range: '>=2.4.1 <2.5.0', hasData: true }
+136 silly addNameRange versions [ 'lodash',
+136 silly addNameRange   [ '0.1.0',
+136 silly addNameRange     '0.2.0',
+136 silly addNameRange     '0.2.1',
+136 silly addNameRange     '0.2.2',
+136 silly addNameRange     '0.3.0',
+136 silly addNameRange     '0.3.1',
+136 silly addNameRange     '0.3.2',
+136 silly addNameRange     '0.4.0',
+136 silly addNameRange     '0.4.1',
+136 silly addNameRange     '0.4.2',
+136 silly addNameRange     '0.5.0-rc.1',
+136 silly addNameRange     '0.5.0',
+136 silly addNameRange     '0.5.1',
+136 silly addNameRange     '0.5.2',
+136 silly addNameRange     '0.6.0',
+136 silly addNameRange     '0.6.1',
+136 silly addNameRange     '0.7.0',
+136 silly addNameRange     '0.8.0',
+136 silly addNameRange     '0.8.1',
+136 silly addNameRange     '0.8.2',
+136 silly addNameRange     '0.9.0',
+136 silly addNameRange     '0.9.1',
+136 silly addNameRange     '0.9.2',
+136 silly addNameRange     '0.10.0',
+136 silly addNameRange     '1.0.0-rc.1',
+136 silly addNameRange     '1.0.0-rc.2',
+136 silly addNameRange     '1.0.0-rc.3',
+136 silly addNameRange     '1.0.0',
+136 silly addNameRange     '1.0.1',
+136 silly addNameRange     '1.1.0',
+136 silly addNameRange     '1.1.1',
+136 silly addNameRange     '1.2.0',
+136 silly addNameRange     '1.2.1',
+136 silly addNameRange     '1.3.0',
+136 silly addNameRange     '1.3.1',
+136 silly addNameRange     '2.0.0',
+136 silly addNameRange     '2.1.0',
+136 silly addNameRange     '2.2.0',
+136 silly addNameRange     '2.2.1',
+136 silly addNameRange     '2.3.0',
+136 silly addNameRange     '2.4.0',
+136 silly addNameRange     '2.4.1',
+136 silly addNameRange     '3.0.0',
+136 silly addNameRange     '3.0.1',
+136 silly addNameRange     '3.1.0',
+136 silly addNameRange     '3.2.0',
+136 silly addNameRange     '3.3.0',
+136 silly addNameRange     '3.3.1',
+136 silly addNameRange     '3.4.0',
+136 silly addNameRange     '3.5.0',
+136 silly addNameRange     '3.6.0',
+136 silly addNameRange     '1.0.2',
+136 silly addNameRange     '3.7.0',
+136 silly addNameRange     '2.4.2',
+136 silly addNameRange     '3.8.0',
+136 silly addNameRange     '3.9.0',
+136 silly addNameRange     '3.9.1',
+136 silly addNameRange     '3.9.2',
+136 silly addNameRange     '3.9.3',
+136 silly addNameRange     '3.10.0',
+136 silly addNameRange     '3.10.1',
+136 silly addNameRange     '4.0.0' ] ]
+137 silly addNamed lodash@2.4.2
+138 verbose addNamed "2.4.2" is a plain semver version for lodash
+139 verbose get https://registry.npmjs.org/tiny-lr-fork not expired, no request
+140 silly cache afterAdd lodash@2.4.2
+141 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\lodash\2.4.2\package\package.json not in flight; writing
+142 silly cache afterAdd tiny-lr-fork@0.0.5
+143 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\tiny-lr-fork\0.0.5\package\package.json not in flight; writing
+144 silly resolveWithNewModule async@0.2.10 checking installable status
+145 silly cache add args [ 'async@~0.2.9', null ]
+146 verbose cache add spec async@~0.2.9
+147 silly cache add parsed spec Result {
+147 silly cache add   raw: 'async@~0.2.9',
+147 silly cache add   scope: null,
+147 silly cache add   name: 'async',
+147 silly cache add   rawSpec: '~0.2.9',
+147 silly cache add   spec: '>=0.2.9 <0.3.0',
+147 silly cache add   type: 'range' }
+148 silly addNamed async@>=0.2.9 <0.3.0
+149 verbose addNamed ">=0.2.9 <0.3.0" is a valid semver range for async
+150 silly addNameRange { name: 'async', range: '>=0.2.9 <0.3.0', hasData: false }
+151 silly mapToRegistry name async
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry uri https://registry.npmjs.org/async
+155 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+156 verbose get https://registry.npmjs.org/async not expired, no request
+157 silly addNameRange number 2 { name: 'async', range: '>=0.2.9 <0.3.0', hasData: true }
+158 silly addNameRange versions [ 'async',
+158 silly addNameRange   [ '0.1.0',
+158 silly addNameRange     '0.1.1',
+158 silly addNameRange     '0.1.2',
+158 silly addNameRange     '0.1.3',
+158 silly addNameRange     '0.1.4',
+158 silly addNameRange     '0.1.5',
+158 silly addNameRange     '0.1.6',
+158 silly addNameRange     '0.1.7',
+158 silly addNameRange     '0.1.8',
+158 silly addNameRange     '0.1.9',
+158 silly addNameRange     '0.1.10',
+158 silly addNameRange     '0.1.11',
+158 silly addNameRange     '0.1.12',
+158 silly addNameRange     '0.1.13',
+158 silly addNameRange     '0.1.14',
+158 silly addNameRange     '0.1.15',
+158 silly addNameRange     '0.1.16',
+158 silly addNameRange     '0.1.17',
+158 silly addNameRange     '0.1.18',
+158 silly addNameRange     '0.1.19',
+158 silly addNameRange     '0.1.20',
+158 silly addNameRange     '0.1.21',
+158 silly addNameRange     '0.1.22',
+158 silly addNameRange     '0.2.0',
+158 silly addNameRange     '0.2.1',
+158 silly addNameRange     '0.2.2',
+158 silly addNameRange     '0.2.3',
+158 silly addNameRange     '0.2.4',
+158 silly addNameRange     '0.2.5',
+158 silly addNameRange     '0.2.6',
+158 silly addNameRange     '0.2.7',
+158 silly addNameRange     '0.2.8',
+158 silly addNameRange     '0.2.9',
+158 silly addNameRange     '0.2.10',
+158 silly addNameRange     '0.3.0',
+158 silly addNameRange     '0.4.0',
+158 silly addNameRange     '0.4.1',
+158 silly addNameRange     '0.5.0',
+158 silly addNameRange     '0.6.0',
+158 silly addNameRange     '0.6.1',
+158 silly addNameRange     '0.6.2',
+158 silly addNameRange     '0.7.0',
+158 silly addNameRange     '0.8.0',
+158 silly addNameRange     '0.9.0',
+158 silly addNameRange     '0.9.2',
+158 silly addNameRange     '1.0.0',
+158 silly addNameRange     '1.1.0',
+158 silly addNameRange     '1.2.0',
+158 silly addNameRange     '1.1.1',
+158 silly addNameRange     '1.2.1',
+158 silly addNameRange     '1.3.0',
+158 silly addNameRange     '1.4.0',
+158 silly addNameRange     '1.4.1',
+158 silly addNameRange     '1.4.2',
+158 silly addNameRange     '1.5.0',
+158 silly addNameRange     '1.5.1',
+158 silly addNameRange     '1.5.2' ] ]
+159 silly addNamed async@0.2.10
+160 verbose addNamed "0.2.10" is a plain semver version for async
+161 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\lodash\2.4.2\package\package.json written
+162 http 304 https://registry.npmjs.org/gaze
+163 verbose headers { date: 'Sat, 23 Jan 2016 11:35:41 GMT',
+163 verbose headers   via: '1.1 varnish',
+163 verbose headers   'cache-control': 'max-age=300',
+163 verbose headers   etag: '"4RADQSZ3ZS1CZ4O9MDH61O231"',
+163 verbose headers   age: '60',
+163 verbose headers   connection: 'keep-alive',
+163 verbose headers   'x-served-by': 'cache-sin6925-SIN',
+163 verbose headers   'x-cache': 'HIT',
+163 verbose headers   'x-cache-hits': '2',
+163 verbose headers   'x-timer': 'S1453548941.940257,VS0,VE0',
+163 verbose headers   vary: 'Accept' }
+164 silly get cb [ 304,
+164 silly get   { date: 'Sat, 23 Jan 2016 11:35:41 GMT',
+164 silly get     via: '1.1 varnish',
+164 silly get     'cache-control': 'max-age=300',
+164 silly get     etag: '"4RADQSZ3ZS1CZ4O9MDH61O231"',
+164 silly get     age: '60',
+164 silly get     connection: 'keep-alive',
+164 silly get     'x-served-by': 'cache-sin6925-SIN',
+164 silly get     'x-cache': 'HIT',
+164 silly get     'x-cache-hits': '2',
+164 silly get     'x-timer': 'S1453548941.940257,VS0,VE0',
+164 silly get     vary: 'Accept' } ]
+165 verbose etag https://registry.npmjs.org/gaze from cache
+166 verbose get saving gaze to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\gaze\.cache.json
+167 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\tiny-lr-fork\0.0.5\package\package.json written
+168 silly cache afterAdd async@0.2.10
+169 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\async\0.2.10\package\package.json not in flight; writing
+170 silly resolveWithNewModule gaze@0.5.2 checking installable status
+171 silly cache add args [ 'gaze@~0.5.1', null ]
+172 verbose cache add spec gaze@~0.5.1
+173 silly cache add parsed spec Result {
+173 silly cache add   raw: 'gaze@~0.5.1',
+173 silly cache add   scope: null,
+173 silly cache add   name: 'gaze',
+173 silly cache add   rawSpec: '~0.5.1',
+173 silly cache add   spec: '>=0.5.1 <0.6.0',
+173 silly cache add   type: 'range' }
+174 silly addNamed gaze@>=0.5.1 <0.6.0
+175 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for gaze
+176 silly addNameRange { name: 'gaze', range: '>=0.5.1 <0.6.0', hasData: false }
+177 silly mapToRegistry name gaze
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://registry.npmjs.org/
+180 silly mapToRegistry uri https://registry.npmjs.org/gaze
+181 verbose addNameRange registry:https://registry.npmjs.org/gaze not in flight; fetching
+182 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\async\0.2.10\package\package.json written
+183 verbose get https://registry.npmjs.org/gaze not expired, no request
+184 silly addNameRange number 2 { name: 'gaze', range: '>=0.5.1 <0.6.0', hasData: true }
+185 silly addNameRange versions [ 'gaze',
+185 silly addNameRange   [ '0.1.0',
+185 silly addNameRange     '0.1.1',
+185 silly addNameRange     '0.1.2',
+185 silly addNameRange     '0.1.3',
+185 silly addNameRange     '0.1.4',
+185 silly addNameRange     '0.1.5',
+185 silly addNameRange     '0.1.6',
+185 silly addNameRange     '0.2.0',
+185 silly addNameRange     '0.2.1',
+185 silly addNameRange     '0.2.2',
+185 silly addNameRange     '0.3.0',
+185 silly addNameRange     '0.3.1',
+185 silly addNameRange     '0.3.2',
+185 silly addNameRange     '0.3.3',
+185 silly addNameRange     '0.3.4',
+185 silly addNameRange     '0.4.0',
+185 silly addNameRange     '0.4.1',
+185 silly addNameRange     '0.4.2',
+185 silly addNameRange     '0.4.3',
+185 silly addNameRange     '0.5.0',
+185 silly addNameRange     '0.5.1',
+185 silly addNameRange     '0.6.0',
+185 silly addNameRange     '0.6.1',
+185 silly addNameRange     '0.6.2',
+185 silly addNameRange     '0.6.3',
+185 silly addNameRange     '0.6.4',
+185 silly addNameRange     '0.5.2' ] ]
+186 silly addNamed gaze@0.5.2
+187 verbose addNamed "0.5.2" is a plain semver version for gaze
+188 silly cache afterAdd gaze@0.5.2
+189 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\gaze\0.5.2\package\package.json not in flight; writing
+190 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\gaze\0.5.2\package\package.json written
+191 silly fetchNamedPackageData globule
+192 silly mapToRegistry name globule
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npmjs.org/
+195 silly mapToRegistry uri https://registry.npmjs.org/globule
+196 verbose request uri https://registry.npmjs.org/globule
+197 verbose request no auth needed
+198 info attempt registry request try #1 at 5:05:42 PM
+199 verbose etag "4MRHUL3PZOWAT3TXB1JGH9YUM"
+200 http request GET https://registry.npmjs.org/globule
+201 http 304 https://registry.npmjs.org/globule
+202 verbose headers { date: 'Sat, 23 Jan 2016 11:35:42 GMT',
+202 verbose headers   via: '1.1 varnish',
+202 verbose headers   'cache-control': 'max-age=300',
+202 verbose headers   etag: '"4MRHUL3PZOWAT3TXB1JGH9YUM"',
+202 verbose headers   age: '132',
+202 verbose headers   connection: 'keep-alive',
+202 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+202 verbose headers   'x-cache': 'HIT',
+202 verbose headers   'x-cache-hits': '2',
+202 verbose headers   'x-timer': 'S1453548942.776598,VS0,VE0',
+202 verbose headers   vary: 'Accept' }
+203 silly get cb [ 304,
+203 silly get   { date: 'Sat, 23 Jan 2016 11:35:42 GMT',
+203 silly get     via: '1.1 varnish',
+203 silly get     'cache-control': 'max-age=300',
+203 silly get     etag: '"4MRHUL3PZOWAT3TXB1JGH9YUM"',
+203 silly get     age: '132',
+203 silly get     connection: 'keep-alive',
+203 silly get     'x-served-by': 'cache-sin6920-SIN',
+203 silly get     'x-cache': 'HIT',
+203 silly get     'x-cache-hits': '2',
+203 silly get     'x-timer': 'S1453548942.776598,VS0,VE0',
+203 silly get     vary: 'Accept' } ]
+204 verbose etag https://registry.npmjs.org/globule from cache
+205 verbose get saving globule to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\globule\.cache.json
+206 silly resolveWithNewModule globule@0.1.0 checking installable status
+207 silly cache add args [ 'globule@~0.1.0', null ]
+208 verbose cache add spec globule@~0.1.0
+209 silly cache add parsed spec Result {
+209 silly cache add   raw: 'globule@~0.1.0',
+209 silly cache add   scope: null,
+209 silly cache add   name: 'globule',
+209 silly cache add   rawSpec: '~0.1.0',
+209 silly cache add   spec: '>=0.1.0 <0.2.0',
+209 silly cache add   type: 'range' }
+210 silly addNamed globule@>=0.1.0 <0.2.0
+211 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for globule
+212 silly addNameRange { name: 'globule', range: '>=0.1.0 <0.2.0', hasData: false }
+213 silly mapToRegistry name globule
+214 silly mapToRegistry using default registry
+215 silly mapToRegistry registry https://registry.npmjs.org/
+216 silly mapToRegistry uri https://registry.npmjs.org/globule
+217 verbose addNameRange registry:https://registry.npmjs.org/globule not in flight; fetching
+218 verbose get https://registry.npmjs.org/globule not expired, no request
+219 silly addNameRange number 2 { name: 'globule', range: '>=0.1.0 <0.2.0', hasData: true }
+220 silly addNameRange versions [ 'globule', [ '0.1.0', '0.2.0' ] ]
+221 silly addNamed globule@0.1.0
+222 verbose addNamed "0.1.0" is a plain semver version for globule
+223 silly cache afterAdd globule@0.1.0
+224 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\globule\0.1.0\package\package.json not in flight; writing
+225 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\globule\0.1.0\package\package.json written
+226 silly fetchNamedPackageData lodash
+227 silly mapToRegistry name lodash
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry uri https://registry.npmjs.org/lodash
+231 silly resolveWithNewModule lodash@1.0.2 checking installable status
+232 silly cache add args [ 'lodash@~1.0.1', null ]
+233 verbose cache add spec lodash@~1.0.1
+234 silly fetchNamedPackageData glob
+235 silly mapToRegistry name glob
+236 silly mapToRegistry using default registry
+237 silly mapToRegistry registry https://registry.npmjs.org/
+238 silly mapToRegistry uri https://registry.npmjs.org/glob
+239 silly fetchNamedPackageData minimatch
+240 silly mapToRegistry name minimatch
+241 silly mapToRegistry using default registry
+242 silly mapToRegistry registry https://registry.npmjs.org/
+243 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+244 silly cache add parsed spec Result {
+244 silly cache add   raw: 'lodash@~1.0.1',
+244 silly cache add   scope: null,
+244 silly cache add   name: 'lodash',
+244 silly cache add   rawSpec: '~1.0.1',
+244 silly cache add   spec: '>=1.0.1 <1.1.0',
+244 silly cache add   type: 'range' }
+245 silly addNamed lodash@>=1.0.1 <1.1.0
+246 verbose addNamed ">=1.0.1 <1.1.0" is a valid semver range for lodash
+247 silly addNameRange { name: 'lodash', range: '>=1.0.1 <1.1.0', hasData: false }
+248 silly mapToRegistry name lodash
+249 silly mapToRegistry using default registry
+250 silly mapToRegistry registry https://registry.npmjs.org/
+251 silly mapToRegistry uri https://registry.npmjs.org/lodash
+252 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+253 verbose request uri https://registry.npmjs.org/glob
+254 verbose request no auth needed
+255 info attempt registry request try #1 at 5:05:43 PM
+256 verbose etag "73PILUHM4JZTLOI0KMY7PE8N7"
+257 http request GET https://registry.npmjs.org/glob
+258 verbose get https://registry.npmjs.org/lodash not expired, no request
+259 silly addNameRange number 2 { name: 'lodash', range: '>=1.0.1 <1.1.0', hasData: true }
+260 silly addNameRange versions [ 'lodash',
+260 silly addNameRange   [ '0.1.0',
+260 silly addNameRange     '0.2.0',
+260 silly addNameRange     '0.2.1',
+260 silly addNameRange     '0.2.2',
+260 silly addNameRange     '0.3.0',
+260 silly addNameRange     '0.3.1',
+260 silly addNameRange     '0.3.2',
+260 silly addNameRange     '0.4.0',
+260 silly addNameRange     '0.4.1',
+260 silly addNameRange     '0.4.2',
+260 silly addNameRange     '0.5.0-rc.1',
+260 silly addNameRange     '0.5.0',
+260 silly addNameRange     '0.5.1',
+260 silly addNameRange     '0.5.2',
+260 silly addNameRange     '0.6.0',
+260 silly addNameRange     '0.6.1',
+260 silly addNameRange     '0.7.0',
+260 silly addNameRange     '0.8.0',
+260 silly addNameRange     '0.8.1',
+260 silly addNameRange     '0.8.2',
+260 silly addNameRange     '0.9.0',
+260 silly addNameRange     '0.9.1',
+260 silly addNameRange     '0.9.2',
+260 silly addNameRange     '0.10.0',
+260 silly addNameRange     '1.0.0-rc.1',
+260 silly addNameRange     '1.0.0-rc.2',
+260 silly addNameRange     '1.0.0-rc.3',
+260 silly addNameRange     '1.0.0',
+260 silly addNameRange     '1.0.1',
+260 silly addNameRange     '1.1.0',
+260 silly addNameRange     '1.1.1',
+260 silly addNameRange     '1.2.0',
+260 silly addNameRange     '1.2.1',
+260 silly addNameRange     '1.3.0',
+260 silly addNameRange     '1.3.1',
+260 silly addNameRange     '2.0.0',
+260 silly addNameRange     '2.1.0',
+260 silly addNameRange     '2.2.0',
+260 silly addNameRange     '2.2.1',
+260 silly addNameRange     '2.3.0',
+260 silly addNameRange     '2.4.0',
+260 silly addNameRange     '2.4.1',
+260 silly addNameRange     '3.0.0',
+260 silly addNameRange     '3.0.1',
+260 silly addNameRange     '3.1.0',
+260 silly addNameRange     '3.2.0',
+260 silly addNameRange     '3.3.0',
+260 silly addNameRange     '3.3.1',
+260 silly addNameRange     '3.4.0',
+260 silly addNameRange     '3.5.0',
+260 silly addNameRange     '3.6.0',
+260 silly addNameRange     '1.0.2',
+260 silly addNameRange     '3.7.0',
+260 silly addNameRange     '2.4.2',
+260 silly addNameRange     '3.8.0',
+260 silly addNameRange     '3.9.0',
+260 silly addNameRange     '3.9.1',
+260 silly addNameRange     '3.9.2',
+260 silly addNameRange     '3.9.3',
+260 silly addNameRange     '3.10.0',
+260 silly addNameRange     '3.10.1',
+260 silly addNameRange     '4.0.0' ] ]
+261 silly addNamed lodash@1.0.2
+262 verbose addNamed "1.0.2" is a plain semver version for lodash
+263 warn deprecated lodash@1.0.2: lodash@<2.0.0 is no longer maintained. Upgrade to lodash@^3.0.0
+264 verbose request uri https://registry.npmjs.org/minimatch
+265 verbose request no auth needed
+266 info attempt registry request try #1 at 5:05:43 PM
+267 verbose etag "4LFAQ3IFUTR8Q3IE1RPPWNQGA"
+268 http request GET https://registry.npmjs.org/minimatch
+269 silly cache afterAdd lodash@1.0.2
+270 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\lodash\1.0.2\package\package.json not in flight; writing
+271 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\lodash\1.0.2\package\package.json written
+272 http 304 https://registry.npmjs.org/minimatch
+273 verbose headers { date: 'Sat, 23 Jan 2016 11:35:43 GMT',
+273 verbose headers   via: '1.1 varnish',
+273 verbose headers   'cache-control': 'max-age=300',
+273 verbose headers   etag: '"4LFAQ3IFUTR8Q3IE1RPPWNQGA"',
+273 verbose headers   age: '241',
+273 verbose headers   connection: 'keep-alive',
+273 verbose headers   'x-served-by': 'cache-sin6925-SIN',
+273 verbose headers   'x-cache': 'HIT',
+273 verbose headers   'x-cache-hits': '493',
+273 verbose headers   'x-timer': 'S1453548943.677420,VS0,VE0',
+273 verbose headers   vary: 'Accept' }
+274 silly get cb [ 304,
+274 silly get   { date: 'Sat, 23 Jan 2016 11:35:43 GMT',
+274 silly get     via: '1.1 varnish',
+274 silly get     'cache-control': 'max-age=300',
+274 silly get     etag: '"4LFAQ3IFUTR8Q3IE1RPPWNQGA"',
+274 silly get     age: '241',
+274 silly get     connection: 'keep-alive',
+274 silly get     'x-served-by': 'cache-sin6925-SIN',
+274 silly get     'x-cache': 'HIT',
+274 silly get     'x-cache-hits': '493',
+274 silly get     'x-timer': 'S1453548943.677420,VS0,VE0',
+274 silly get     vary: 'Accept' } ]
+275 verbose etag https://registry.npmjs.org/minimatch from cache
+276 verbose get saving minimatch to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\minimatch\.cache.json
+277 http 304 https://registry.npmjs.org/glob
+278 verbose headers { date: 'Sat, 23 Jan 2016 11:35:43 GMT',
+278 verbose headers   via: '1.1 varnish',
+278 verbose headers   'cache-control': 'max-age=300',
+278 verbose headers   etag: '"73PILUHM4JZTLOI0KMY7PE8N7"',
+278 verbose headers   age: '104',
+278 verbose headers   connection: 'keep-alive',
+278 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+278 verbose headers   'x-cache': 'HIT',
+278 verbose headers   'x-cache-hits': '8',
+278 verbose headers   'x-timer': 'S1453548943.692286,VS0,VE0',
+278 verbose headers   vary: 'Accept' }
+279 silly get cb [ 304,
+279 silly get   { date: 'Sat, 23 Jan 2016 11:35:43 GMT',
+279 silly get     via: '1.1 varnish',
+279 silly get     'cache-control': 'max-age=300',
+279 silly get     etag: '"73PILUHM4JZTLOI0KMY7PE8N7"',
+279 silly get     age: '104',
+279 silly get     connection: 'keep-alive',
+279 silly get     'x-served-by': 'cache-sin6922-SIN',
+279 silly get     'x-cache': 'HIT',
+279 silly get     'x-cache-hits': '8',
+279 silly get     'x-timer': 'S1453548943.692286,VS0,VE0',
+279 silly get     vary: 'Accept' } ]
+280 verbose etag https://registry.npmjs.org/glob from cache
+281 verbose get saving glob to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\glob\.cache.json
+282 silly resolveWithNewModule minimatch@0.2.14 checking installable status
+283 silly cache add args [ 'minimatch@~0.2.11', null ]
+284 verbose cache add spec minimatch@~0.2.11
+285 silly cache add parsed spec Result {
+285 silly cache add   raw: 'minimatch@~0.2.11',
+285 silly cache add   scope: null,
+285 silly cache add   name: 'minimatch',
+285 silly cache add   rawSpec: '~0.2.11',
+285 silly cache add   spec: '>=0.2.11 <0.3.0',
+285 silly cache add   type: 'range' }
+286 silly addNamed minimatch@>=0.2.11 <0.3.0
+287 verbose addNamed ">=0.2.11 <0.3.0" is a valid semver range for minimatch
+288 silly addNameRange { name: 'minimatch', range: '>=0.2.11 <0.3.0', hasData: false }
+289 silly mapToRegistry name minimatch
+290 silly mapToRegistry using default registry
+291 silly mapToRegistry registry https://registry.npmjs.org/
+292 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+293 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+294 verbose get https://registry.npmjs.org/minimatch not expired, no request
+295 silly addNameRange number 2 { name: 'minimatch', range: '>=0.2.11 <0.3.0', hasData: true }
+296 silly addNameRange versions [ 'minimatch',
+296 silly addNameRange   [ '0.0.1',
+296 silly addNameRange     '0.0.2',
+296 silly addNameRange     '0.0.4',
+296 silly addNameRange     '0.0.5',
+296 silly addNameRange     '0.1.1',
+296 silly addNameRange     '0.1.2',
+296 silly addNameRange     '0.1.3',
+296 silly addNameRange     '0.1.4',
+296 silly addNameRange     '0.1.5',
+296 silly addNameRange     '0.2.0',
+296 silly addNameRange     '0.2.2',
+296 silly addNameRange     '0.2.3',
+296 silly addNameRange     '0.2.4',
+296 silly addNameRange     '0.2.5',
+296 silly addNameRange     '0.2.6',
+296 silly addNameRange     '0.2.7',
+296 silly addNameRange     '0.2.8',
+296 silly addNameRange     '0.2.9',
+296 silly addNameRange     '0.2.10',
+296 silly addNameRange     '0.2.11',
+296 silly addNameRange     '0.2.12',
+296 silly addNameRange     '0.2.13',
+296 silly addNameRange     '0.2.14',
+296 silly addNameRange     '0.3.0',
+296 silly addNameRange     '0.4.0',
+296 silly addNameRange     '1.0.0',
+296 silly addNameRange     '2.0.0',
+296 silly addNameRange     '2.0.1',
+296 silly addNameRange     '2.0.2',
+296 silly addNameRange     '2.0.3',
+296 silly addNameRange     '2.0.4',
+296 silly addNameRange     '2.0.5',
+296 silly addNameRange     '2.0.6',
+296 silly addNameRange     '2.0.7',
+296 silly addNameRange     '2.0.8',
+296 silly addNameRange     '2.0.9',
+296 silly addNameRange     '2.0.10',
+296 silly addNameRange     '3.0.0' ] ]
+297 silly addNamed minimatch@0.2.14
+298 verbose addNamed "0.2.14" is a plain semver version for minimatch
+299 silly cache afterAdd minimatch@0.2.14
+300 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\minimatch\0.2.14\package\package.json not in flight; writing
+301 silly resolveWithNewModule glob@3.1.21 checking installable status
+302 silly cache add args [ 'glob@~3.1.21', null ]
+303 verbose cache add spec glob@~3.1.21
+304 silly cache add parsed spec Result {
+304 silly cache add   raw: 'glob@~3.1.21',
+304 silly cache add   scope: null,
+304 silly cache add   name: 'glob',
+304 silly cache add   rawSpec: '~3.1.21',
+304 silly cache add   spec: '>=3.1.21 <3.2.0',
+304 silly cache add   type: 'range' }
+305 silly addNamed glob@>=3.1.21 <3.2.0
+306 verbose addNamed ">=3.1.21 <3.2.0" is a valid semver range for glob
+307 silly addNameRange { name: 'glob', range: '>=3.1.21 <3.2.0', hasData: false }
+308 silly mapToRegistry name glob
+309 silly mapToRegistry using default registry
+310 silly mapToRegistry registry https://registry.npmjs.org/
+311 silly mapToRegistry uri https://registry.npmjs.org/glob
+312 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+313 verbose get https://registry.npmjs.org/glob not expired, no request
+314 silly addNameRange number 2 { name: 'glob', range: '>=3.1.21 <3.2.0', hasData: true }
+315 silly addNameRange versions [ 'glob',
+315 silly addNameRange   [ '1.1.0',
+315 silly addNameRange     '2.0.9',
+315 silly addNameRange     '2.0.8',
+315 silly addNameRange     '2.0.7',
+315 silly addNameRange     '2.1.0',
+315 silly addNameRange     '3.0.0',
+315 silly addNameRange     '3.0.1',
+315 silly addNameRange     '3.1.0',
+315 silly addNameRange     '3.1.1',
+315 silly addNameRange     '3.1.2',
+315 silly addNameRange     '3.1.3',
+315 silly addNameRange     '3.1.4',
+315 silly addNameRange     '3.1.5',
+315 silly addNameRange     '3.1.6',
+315 silly addNameRange     '3.1.7',
+315 silly addNameRange     '3.1.9',
+315 silly addNameRange     '3.1.10',
+315 silly addNameRange     '3.1.11',
+315 silly addNameRange     '3.1.12',
+315 silly addNameRange     '3.1.13',
+315 silly addNameRange     '3.1.14',
+315 silly addNameRange     '3.1.15',
+315 silly addNameRange     '3.1.16',
+315 silly addNameRange     '3.1.17',
+315 silly addNameRange     '3.1.18',
+315 silly addNameRange     '3.1.19',
+315 silly addNameRange     '3.1.20',
+315 silly addNameRange     '3.1.21',
+315 silly addNameRange     '3.2.0',
+315 silly addNameRange     '3.2.1',
+315 silly addNameRange     '3.2.3',
+315 silly addNameRange     '3.2.4',
+315 silly addNameRange     '3.2.5',
+315 silly addNameRange     '3.2.6',
+315 silly addNameRange     '3.2.7',
+315 silly addNameRange     '3.2.8',
+315 silly addNameRange     '3.2.9',
+315 silly addNameRange     '3.2.10',
+315 silly addNameRange     '3.2.11',
+315 silly addNameRange     '4.0.0',
+315 silly addNameRange     '4.0.1',
+315 silly addNameRange     '4.0.2',
+315 silly addNameRange     '4.0.3',
+315 silly addNameRange     '4.0.4',
+315 silly addNameRange     '4.0.5',
+315 silly addNameRange     '4.0.6',
+315 silly addNameRange     '4.1.2-beta',
+315 silly addNameRange     '4.1.2',
+315 silly addNameRange     '4.1.3',
+315 silly addNameRange     '4.1.4',
+315 silly addNameRange     '4.1.5',
+315 silly addNameRange     '4.1.6',
+315 silly addNameRange     '4.2.0',
+315 silly addNameRange     '4.2.1',
+315 silly addNameRange     '4.2.2',
+315 silly addNameRange     '4.3.0',
+315 silly addNameRange     '4.3.1',
+315 silly addNameRange     '4.3.2',
+315 silly addNameRange     '4.3.3',
+315 silly addNameRange     '4.3.4',
+315 silly addNameRange     '4.3.5',
+315 silly addNameRange     '4.4.0',
+315 silly addNameRange     '4.4.2',
+315 silly addNameRange     '4.5.0',
+315 silly addNameRange     '5.0.0',
+315 silly addNameRange     '4.5.1',
+315 silly addNameRange     '5.0.1',
+315 silly addNameRange     '4.5.2',
+315 silly addNameRange     '5.0.2',
+315 silly addNameRange     '4.5.3',
+315 silly addNameRange     '5.0.3',
+315 silly addNameRange     '5.0.4',
+315 silly addNameRange     '5.0.5',
+315 silly addNameRange     '5.0.6',
+315 silly addNameRange     '5.0.7',
+315 silly addNameRange     '5.0.9',
+315 silly addNameRange     '5.0.10',
+315 silly addNameRange     '5.0.11',
+315 silly addNameRange     '5.0.12',
+315 silly addNameRange     '5.0.13',
+315 silly addNameRange     '5.0.14',
+315 silly addNameRange     '5.0.15',
+315 silly addNameRange     '6.0.1',
+315 silly addNameRange     '6.0.2',
+315 silly addNameRange     '6.0.3',
+315 silly addNameRange     '6.0.4' ] ]
+316 silly addNamed glob@3.1.21
+317 verbose addNamed "3.1.21" is a plain semver version for glob
+318 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\minimatch\0.2.14\package\package.json written
+319 silly cache afterAdd glob@3.1.21
+320 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\glob\3.1.21\package\package.json not in flight; writing
+321 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\glob\3.1.21\package\package.json written
+322 silly fetchNamedPackageData graceful-fs
+323 silly mapToRegistry name graceful-fs
+324 silly mapToRegistry using default registry
+325 silly mapToRegistry registry https://registry.npmjs.org/
+326 silly mapToRegistry uri https://registry.npmjs.org/graceful-fs
+327 silly fetchNamedPackageData inherits
+328 silly mapToRegistry name inherits
+329 silly mapToRegistry using default registry
+330 silly mapToRegistry registry https://registry.npmjs.org/
+331 silly mapToRegistry uri https://registry.npmjs.org/inherits
+332 verbose request uri https://registry.npmjs.org/inherits
+333 verbose request no auth needed
+334 info attempt registry request try #1 at 5:05:43 PM
+335 verbose etag "6K5QFLUTXPME0NV1TFDRFLKIL"
+336 http request GET https://registry.npmjs.org/inherits
+337 verbose request uri https://registry.npmjs.org/graceful-fs
+338 verbose request no auth needed
+339 info attempt registry request try #1 at 5:05:43 PM
+340 verbose etag "8W5ZQ2IHWS4PKE9FMXW32NX69"
+341 http request GET https://registry.npmjs.org/graceful-fs
+342 http 304 https://registry.npmjs.org/inherits
+343 verbose headers { date: 'Sat, 23 Jan 2016 11:35:44 GMT',
+343 verbose headers   via: '1.1 varnish',
+343 verbose headers   'cache-control': 'max-age=300',
+343 verbose headers   etag: '"6K5QFLUTXPME0NV1TFDRFLKIL"',
+343 verbose headers   age: '2',
+343 verbose headers   connection: 'keep-alive',
+343 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+343 verbose headers   'x-cache': 'HIT',
+343 verbose headers   'x-cache-hits': '1',
+343 verbose headers   'x-timer': 'S1453548944.509665,VS0,VE0',
+343 verbose headers   vary: 'Accept' }
+344 silly get cb [ 304,
+344 silly get   { date: 'Sat, 23 Jan 2016 11:35:44 GMT',
+344 silly get     via: '1.1 varnish',
+344 silly get     'cache-control': 'max-age=300',
+344 silly get     etag: '"6K5QFLUTXPME0NV1TFDRFLKIL"',
+344 silly get     age: '2',
+344 silly get     connection: 'keep-alive',
+344 silly get     'x-served-by': 'cache-sin6922-SIN',
+344 silly get     'x-cache': 'HIT',
+344 silly get     'x-cache-hits': '1',
+344 silly get     'x-timer': 'S1453548944.509665,VS0,VE0',
+344 silly get     vary: 'Accept' } ]
+345 verbose etag https://registry.npmjs.org/inherits from cache
+346 verbose get saving inherits to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\inherits\.cache.json
+347 http 304 https://registry.npmjs.org/graceful-fs
+348 verbose headers { date: 'Sat, 23 Jan 2016 11:35:44 GMT',
+348 verbose headers   via: '1.1 varnish',
+348 verbose headers   'cache-control': 'max-age=300',
+348 verbose headers   etag: '"8W5ZQ2IHWS4PKE9FMXW32NX69"',
+348 verbose headers   age: '160',
+348 verbose headers   connection: 'keep-alive',
+348 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+348 verbose headers   'x-cache': 'HIT',
+348 verbose headers   'x-cache-hits': '3',
+348 verbose headers   'x-timer': 'S1453548944.520146,VS0,VE0',
+348 verbose headers   vary: 'Accept' }
+349 silly get cb [ 304,
+349 silly get   { date: 'Sat, 23 Jan 2016 11:35:44 GMT',
+349 silly get     via: '1.1 varnish',
+349 silly get     'cache-control': 'max-age=300',
+349 silly get     etag: '"8W5ZQ2IHWS4PKE9FMXW32NX69"',
+349 silly get     age: '160',
+349 silly get     connection: 'keep-alive',
+349 silly get     'x-served-by': 'cache-sin6921-SIN',
+349 silly get     'x-cache': 'HIT',
+349 silly get     'x-cache-hits': '3',
+349 silly get     'x-timer': 'S1453548944.520146,VS0,VE0',
+349 silly get     vary: 'Accept' } ]
+350 verbose etag https://registry.npmjs.org/graceful-fs from cache
+351 verbose get saving graceful-fs to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\graceful-fs\.cache.json
+352 silly resolveWithNewModule inherits@1.0.2 checking installable status
+353 silly cache add args [ 'inherits@1', null ]
+354 verbose cache add spec inherits@1
+355 silly cache add parsed spec Result {
+355 silly cache add   raw: 'inherits@1',
+355 silly cache add   scope: null,
+355 silly cache add   name: 'inherits',
+355 silly cache add   rawSpec: '1',
+355 silly cache add   spec: '>=1.0.0 <2.0.0',
+355 silly cache add   type: 'range' }
+356 silly addNamed inherits@>=1.0.0 <2.0.0
+357 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for inherits
+358 silly addNameRange { name: 'inherits', range: '>=1.0.0 <2.0.0', hasData: false }
+359 silly mapToRegistry name inherits
+360 silly mapToRegistry using default registry
+361 silly mapToRegistry registry https://registry.npmjs.org/
+362 silly mapToRegistry uri https://registry.npmjs.org/inherits
+363 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+364 verbose get https://registry.npmjs.org/inherits not expired, no request
+365 silly addNameRange number 2 { name: 'inherits', range: '>=1.0.0 <2.0.0', hasData: true }
+366 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2' ] ]
+367 silly addNamed inherits@1.0.2
+368 verbose addNamed "1.0.2" is a plain semver version for inherits
+369 silly cache afterAdd inherits@1.0.2
+370 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\inherits\1.0.2\package\package.json not in flight; writing
+371 silly resolveWithNewModule graceful-fs@1.2.3 checking installable status
+372 silly cache add args [ 'graceful-fs@~1.2.0', null ]
+373 verbose cache add spec graceful-fs@~1.2.0
+374 silly cache add parsed spec Result {
+374 silly cache add   raw: 'graceful-fs@~1.2.0',
+374 silly cache add   scope: null,
+374 silly cache add   name: 'graceful-fs',
+374 silly cache add   rawSpec: '~1.2.0',
+374 silly cache add   spec: '>=1.2.0 <1.3.0',
+374 silly cache add   type: 'range' }
+375 silly addNamed graceful-fs@>=1.2.0 <1.3.0
+376 verbose addNamed ">=1.2.0 <1.3.0" is a valid semver range for graceful-fs
+377 silly addNameRange { name: 'graceful-fs', range: '>=1.2.0 <1.3.0', hasData: false }
+378 silly mapToRegistry name graceful-fs
+379 silly mapToRegistry using default registry
+380 silly mapToRegistry registry https://registry.npmjs.org/
+381 silly mapToRegistry uri https://registry.npmjs.org/graceful-fs
+382 verbose addNameRange registry:https://registry.npmjs.org/graceful-fs not in flight; fetching
+383 verbose get https://registry.npmjs.org/graceful-fs not expired, no request
+384 silly addNameRange number 2 { name: 'graceful-fs', range: '>=1.2.0 <1.3.0', hasData: true }
+385 silly addNameRange versions [ 'graceful-fs',
+385 silly addNameRange   [ '1.0.0',
+385 silly addNameRange     '1.0.1',
+385 silly addNameRange     '1.0.2',
+385 silly addNameRange     '1.1.0',
+385 silly addNameRange     '1.1.1',
+385 silly addNameRange     '1.1.2',
+385 silly addNameRange     '1.1.3',
+385 silly addNameRange     '1.1.4',
+385 silly addNameRange     '1.1.5',
+385 silly addNameRange     '1.1.6',
+385 silly addNameRange     '1.1.7',
+385 silly addNameRange     '1.1.8',
+385 silly addNameRange     '1.1.9',
+385 silly addNameRange     '1.1.10',
+385 silly addNameRange     '1.1.11',
+385 silly addNameRange     '1.1.12',
+385 silly addNameRange     '1.1.13',
+385 silly addNameRange     '1.1.14',
+385 silly addNameRange     '1.2.0',
+385 silly addNameRange     '1.2.1',
+385 silly addNameRange     '1.2.2',
+385 silly addNameRange     '1.2.3',
+385 silly addNameRange     '2.0.0',
+385 silly addNameRange     '2.0.1',
+385 silly addNameRange     '2.0.2',
+385 silly addNameRange     '2.0.3',
+385 silly addNameRange     '3.0.0',
+385 silly addNameRange     '3.0.1',
+385 silly addNameRange     '3.0.2',
+385 silly addNameRange     '3.0.3',
+385 silly addNameRange     '3.0.4',
+385 silly addNameRange     '3.0.5',
+385 silly addNameRange     '3.0.6',
+385 silly addNameRange     '3.0.7',
+385 silly addNameRange     '3.0.8',
+385 silly addNameRange     '4.1.0',
+385 silly addNameRange     '4.1.1',
+385 silly addNameRange     '4.1.2' ] ]
+386 silly addNamed graceful-fs@1.2.3
+387 verbose addNamed "1.2.3" is a plain semver version for graceful-fs
+388 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\inherits\1.0.2\package\package.json written
+389 silly cache afterAdd graceful-fs@1.2.3
+390 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\graceful-fs\1.2.3\package\package.json not in flight; writing
+391 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\graceful-fs\1.2.3\package\package.json written
+392 silly fetchNamedPackageData lru-cache
+393 silly mapToRegistry name lru-cache
+394 silly mapToRegistry using default registry
+395 silly mapToRegistry registry https://registry.npmjs.org/
+396 silly mapToRegistry uri https://registry.npmjs.org/lru-cache
+397 silly fetchNamedPackageData sigmund
+398 silly mapToRegistry name sigmund
+399 silly mapToRegistry using default registry
+400 silly mapToRegistry registry https://registry.npmjs.org/
+401 silly mapToRegistry uri https://registry.npmjs.org/sigmund
+402 verbose request uri https://registry.npmjs.org/sigmund
+403 verbose request no auth needed
+404 info attempt registry request try #1 at 5:05:44 PM
+405 verbose etag "1TUX00X8YEKNFED6GGWS214S3"
+406 http request GET https://registry.npmjs.org/sigmund
+407 verbose request uri https://registry.npmjs.org/lru-cache
+408 verbose request no auth needed
+409 info attempt registry request try #1 at 5:05:44 PM
+410 verbose etag "7CI0NKK8QZ7JAGBNVAHHLOEKD"
+411 http request GET https://registry.npmjs.org/lru-cache
+412 http 304 https://registry.npmjs.org/sigmund
+413 verbose headers { date: 'Sat, 23 Jan 2016 11:35:45 GMT',
+413 verbose headers   via: '1.1 varnish',
+413 verbose headers   'cache-control': 'max-age=300',
+413 verbose headers   etag: '"1TUX00X8YEKNFED6GGWS214S3"',
+413 verbose headers   age: '193',
+413 verbose headers   connection: 'keep-alive',
+413 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+413 verbose headers   'x-cache': 'HIT',
+413 verbose headers   'x-cache-hits': '3',
+413 verbose headers   'x-timer': 'S1453548945.333051,VS0,VE0',
+413 verbose headers   vary: 'Accept' }
+414 silly get cb [ 304,
+414 silly get   { date: 'Sat, 23 Jan 2016 11:35:45 GMT',
+414 silly get     via: '1.1 varnish',
+414 silly get     'cache-control': 'max-age=300',
+414 silly get     etag: '"1TUX00X8YEKNFED6GGWS214S3"',
+414 silly get     age: '193',
+414 silly get     connection: 'keep-alive',
+414 silly get     'x-served-by': 'cache-sin6922-SIN',
+414 silly get     'x-cache': 'HIT',
+414 silly get     'x-cache-hits': '3',
+414 silly get     'x-timer': 'S1453548945.333051,VS0,VE0',
+414 silly get     vary: 'Accept' } ]
+415 verbose etag https://registry.npmjs.org/sigmund from cache
+416 verbose get saving sigmund to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\sigmund\.cache.json
+417 silly resolveWithNewModule sigmund@1.0.1 checking installable status
+418 silly cache add args [ 'sigmund@~1.0.0', null ]
+419 verbose cache add spec sigmund@~1.0.0
+420 silly cache add parsed spec Result {
+420 silly cache add   raw: 'sigmund@~1.0.0',
+420 silly cache add   scope: null,
+420 silly cache add   name: 'sigmund',
+420 silly cache add   rawSpec: '~1.0.0',
+420 silly cache add   spec: '>=1.0.0 <1.1.0',
+420 silly cache add   type: 'range' }
+421 silly addNamed sigmund@>=1.0.0 <1.1.0
+422 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for sigmund
+423 silly addNameRange { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: false }
+424 silly mapToRegistry name sigmund
+425 silly mapToRegistry using default registry
+426 silly mapToRegistry registry https://registry.npmjs.org/
+427 silly mapToRegistry uri https://registry.npmjs.org/sigmund
+428 verbose addNameRange registry:https://registry.npmjs.org/sigmund not in flight; fetching
+429 http 304 https://registry.npmjs.org/lru-cache
+430 verbose headers { date: 'Sat, 23 Jan 2016 11:35:45 GMT',
+430 verbose headers   via: '1.1 varnish',
+430 verbose headers   'cache-control': 'max-age=300',
+430 verbose headers   etag: '"7CI0NKK8QZ7JAGBNVAHHLOEKD"',
+430 verbose headers   age: '96',
+430 verbose headers   connection: 'keep-alive',
+430 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+430 verbose headers   'x-cache': 'HIT',
+430 verbose headers   'x-cache-hits': '26',
+430 verbose headers   'x-timer': 'S1453548945.337610,VS0,VE0',
+430 verbose headers   vary: 'Accept' }
+431 silly get cb [ 304,
+431 silly get   { date: 'Sat, 23 Jan 2016 11:35:45 GMT',
+431 silly get     via: '1.1 varnish',
+431 silly get     'cache-control': 'max-age=300',
+431 silly get     etag: '"7CI0NKK8QZ7JAGBNVAHHLOEKD"',
+431 silly get     age: '96',
+431 silly get     connection: 'keep-alive',
+431 silly get     'x-served-by': 'cache-sin6927-SIN',
+431 silly get     'x-cache': 'HIT',
+431 silly get     'x-cache-hits': '26',
+431 silly get     'x-timer': 'S1453548945.337610,VS0,VE0',
+431 silly get     vary: 'Accept' } ]
+432 verbose etag https://registry.npmjs.org/lru-cache from cache
+433 verbose get saving lru-cache to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\lru-cache\.cache.json
+434 verbose get https://registry.npmjs.org/sigmund not expired, no request
+435 silly addNameRange number 2 { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: true }
+436 silly addNameRange versions [ 'sigmund', [ '1.0.0', '1.0.1' ] ]
+437 silly addNamed sigmund@1.0.1
+438 verbose addNamed "1.0.1" is a plain semver version for sigmund
+439 silly cache afterAdd sigmund@1.0.1
+440 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\sigmund\1.0.1\package\package.json not in flight; writing
+441 silly resolveWithNewModule lru-cache@2.7.3 checking installable status
+442 silly cache add args [ 'lru-cache@2', null ]
+443 verbose cache add spec lru-cache@2
+444 silly cache add parsed spec Result {
+444 silly cache add   raw: 'lru-cache@2',
+444 silly cache add   scope: null,
+444 silly cache add   name: 'lru-cache',
+444 silly cache add   rawSpec: '2',
+444 silly cache add   spec: '>=2.0.0 <3.0.0',
+444 silly cache add   type: 'range' }
+445 silly addNamed lru-cache@>=2.0.0 <3.0.0
+446 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for lru-cache
+447 silly addNameRange { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: false }
+448 silly mapToRegistry name lru-cache
+449 silly mapToRegistry using default registry
+450 silly mapToRegistry registry https://registry.npmjs.org/
+451 silly mapToRegistry uri https://registry.npmjs.org/lru-cache
+452 verbose addNameRange registry:https://registry.npmjs.org/lru-cache not in flight; fetching
+453 verbose get https://registry.npmjs.org/lru-cache not expired, no request
+454 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: true }
+455 silly addNameRange versions [ 'lru-cache',
+455 silly addNameRange   [ '1.0.1',
+455 silly addNameRange     '1.0.2',
+455 silly addNameRange     '1.0.3',
+455 silly addNameRange     '1.0.4',
+455 silly addNameRange     '1.0.5',
+455 silly addNameRange     '1.0.6',
+455 silly addNameRange     '1.1.0',
+455 silly addNameRange     '1.1.1',
+455 silly addNameRange     '2.0.0',
+455 silly addNameRange     '2.0.1',
+455 silly addNameRange     '2.0.2',
+455 silly addNameRange     '2.0.3',
+455 silly addNameRange     '2.0.4',
+455 silly addNameRange     '2.1.0',
+455 silly addNameRange     '2.2.0',
+455 silly addNameRange     '2.2.1',
+455 silly addNameRange     '2.2.2',
+455 silly addNameRange     '2.2.4',
+455 silly addNameRange     '2.3.0',
+455 silly addNameRange     '2.3.1',
+455 silly addNameRange     '2.5.0',
+455 silly addNameRange     '2.5.1',
+455 silly addNameRange     '2.5.2',
+455 silly addNameRange     '2.6.0',
+455 silly addNameRange     '2.6.1',
+455 silly addNameRange     '2.6.2',
+455 silly addNameRange     '2.6.3',
+455 silly addNameRange     '2.6.4',
+455 silly addNameRange     '2.6.5',
+455 silly addNameRange     '2.7.0',
+455 silly addNameRange     '2.7.1',
+455 silly addNameRange     '2.7.2',
+455 silly addNameRange     '2.7.3',
+455 silly addNameRange     '3.0.0',
+455 silly addNameRange     '3.1.0',
+455 silly addNameRange     '3.1.1',
+455 silly addNameRange     '3.1.2',
+455 silly addNameRange     '3.2.0',
+455 silly addNameRange     '4.0.0' ] ]
+456 silly addNamed lru-cache@2.7.3
+457 verbose addNamed "2.7.3" is a plain semver version for lru-cache
+458 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\sigmund\1.0.1\package\package.json written
+459 silly cache afterAdd lru-cache@2.7.3
+460 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\lru-cache\2.7.3\package\package.json not in flight; writing
+461 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\lru-cache\2.7.3\package\package.json written
+462 silly fetchNamedPackageData qs
+463 silly mapToRegistry name qs
+464 silly mapToRegistry using default registry
+465 silly mapToRegistry registry https://registry.npmjs.org/
+466 silly mapToRegistry uri https://registry.npmjs.org/qs
+467 silly fetchNamedPackageData faye-websocket
+468 silly mapToRegistry name faye-websocket
+469 silly mapToRegistry using default registry
+470 silly mapToRegistry registry https://registry.npmjs.org/
+471 silly mapToRegistry uri https://registry.npmjs.org/faye-websocket
+472 silly fetchNamedPackageData noptify
+473 silly mapToRegistry name noptify
+474 silly mapToRegistry using default registry
+475 silly mapToRegistry registry https://registry.npmjs.org/
+476 silly mapToRegistry uri https://registry.npmjs.org/noptify
+477 silly fetchNamedPackageData debug
+478 silly mapToRegistry name debug
+479 silly mapToRegistry using default registry
+480 silly mapToRegistry registry https://registry.npmjs.org/
+481 silly mapToRegistry uri https://registry.npmjs.org/debug
+482 verbose request uri https://registry.npmjs.org/faye-websocket
+483 verbose request no auth needed
+484 info attempt registry request try #1 at 5:05:45 PM
+485 verbose etag "6IWLVLS53963B3DEA36MEAKHE"
+486 http request GET https://registry.npmjs.org/faye-websocket
+487 verbose request uri https://registry.npmjs.org/qs
+488 verbose request no auth needed
+489 info attempt registry request try #1 at 5:05:45 PM
+490 verbose etag "7BHVHFRTUOYZSVKQGJDO4PZA6"
+491 http request GET https://registry.npmjs.org/qs
+492 verbose request uri https://registry.npmjs.org/noptify
+493 verbose request no auth needed
+494 info attempt registry request try #1 at 5:05:45 PM
+495 verbose etag "54FU4PQ3TD6NXXJ8GHL2OMF67"
+496 http request GET https://registry.npmjs.org/noptify
+497 verbose request uri https://registry.npmjs.org/debug
+498 verbose request no auth needed
+499 info attempt registry request try #1 at 5:05:45 PM
+500 verbose etag "81Q55A0L72IF6R46QA8FKWTYO"
+501 http request GET https://registry.npmjs.org/debug
+502 http 304 https://registry.npmjs.org/faye-websocket
+503 verbose headers { date: 'Sat, 23 Jan 2016 11:35:46 GMT',
+503 verbose headers   via: '1.1 varnish',
+503 verbose headers   'cache-control': 'max-age=300',
+503 verbose headers   etag: '"6IWLVLS53963B3DEA36MEAKHE"',
+503 verbose headers   age: '17',
+503 verbose headers   connection: 'keep-alive',
+503 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+503 verbose headers   'x-cache': 'HIT',
+503 verbose headers   'x-cache-hits': '1',
+503 verbose headers   'x-timer': 'S1453548946.183325,VS0,VE0',
+503 verbose headers   vary: 'Accept' }
+504 silly get cb [ 304,
+504 silly get   { date: 'Sat, 23 Jan 2016 11:35:46 GMT',
+504 silly get     via: '1.1 varnish',
+504 silly get     'cache-control': 'max-age=300',
+504 silly get     etag: '"6IWLVLS53963B3DEA36MEAKHE"',
+504 silly get     age: '17',
+504 silly get     connection: 'keep-alive',
+504 silly get     'x-served-by': 'cache-sin6922-SIN',
+504 silly get     'x-cache': 'HIT',
+504 silly get     'x-cache-hits': '1',
+504 silly get     'x-timer': 'S1453548946.183325,VS0,VE0',
+504 silly get     vary: 'Accept' } ]
+505 verbose etag https://registry.npmjs.org/faye-websocket from cache
+506 verbose get saving faye-websocket to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\faye-websocket\.cache.json
+507 silly resolveWithNewModule faye-websocket@0.4.4 checking installable status
+508 silly cache add args [ 'faye-websocket@~0.4.3', null ]
+509 verbose cache add spec faye-websocket@~0.4.3
+510 silly cache add parsed spec Result {
+510 silly cache add   raw: 'faye-websocket@~0.4.3',
+510 silly cache add   scope: null,
+510 silly cache add   name: 'faye-websocket',
+510 silly cache add   rawSpec: '~0.4.3',
+510 silly cache add   spec: '>=0.4.3 <0.5.0',
+510 silly cache add   type: 'range' }
+511 silly addNamed faye-websocket@>=0.4.3 <0.5.0
+512 verbose addNamed ">=0.4.3 <0.5.0" is a valid semver range for faye-websocket
+513 silly addNameRange { name: 'faye-websocket',
+513 silly addNameRange   range: '>=0.4.3 <0.5.0',
+513 silly addNameRange   hasData: false }
+514 silly mapToRegistry name faye-websocket
+515 silly mapToRegistry using default registry
+516 silly mapToRegistry registry https://registry.npmjs.org/
+517 silly mapToRegistry uri https://registry.npmjs.org/faye-websocket
+518 verbose addNameRange registry:https://registry.npmjs.org/faye-websocket not in flight; fetching
+519 verbose get https://registry.npmjs.org/faye-websocket not expired, no request
+520 silly addNameRange number 2 { name: 'faye-websocket',
+520 silly addNameRange   range: '>=0.4.3 <0.5.0',
+520 silly addNameRange   hasData: true }
+521 silly addNameRange versions [ 'faye-websocket',
+521 silly addNameRange   [ '0.1.0',
+521 silly addNameRange     '0.1.1',
+521 silly addNameRange     '0.1.2',
+521 silly addNameRange     '0.2.0',
+521 silly addNameRange     '0.3.0',
+521 silly addNameRange     '0.3.1',
+521 silly addNameRange     '0.4.0',
+521 silly addNameRange     '0.4.1',
+521 silly addNameRange     '0.4.2',
+521 silly addNameRange     '0.4.3',
+521 silly addNameRange     '0.4.4',
+521 silly addNameRange     '0.5.0',
+521 silly addNameRange     '0.6.0',
+521 silly addNameRange     '0.6.1',
+521 silly addNameRange     '0.7.0',
+521 silly addNameRange     '0.7.1',
+521 silly addNameRange     '0.7.2',
+521 silly addNameRange     '0.7.3',
+521 silly addNameRange     '0.8.0',
+521 silly addNameRange     '0.8.1',
+521 silly addNameRange     '0.9.0',
+521 silly addNameRange     '0.9.1',
+521 silly addNameRange     '0.9.2',
+521 silly addNameRange     '0.9.3',
+521 silly addNameRange     '0.9.4',
+521 silly addNameRange     '0.10.0' ] ]
+522 silly addNamed faye-websocket@0.4.4
+523 verbose addNamed "0.4.4" is a plain semver version for faye-websocket
+524 http 304 https://registry.npmjs.org/qs
+525 verbose headers { date: 'Sat, 23 Jan 2016 11:35:46 GMT',
+525 verbose headers   via: '1.1 varnish',
+525 verbose headers   'cache-control': 'max-age=300',
+525 verbose headers   etag: '"7BHVHFRTUOYZSVKQGJDO4PZA6"',
+525 verbose headers   age: '74',
+525 verbose headers   connection: 'keep-alive',
+525 verbose headers   'x-served-by': 'cache-sin6925-SIN',
+525 verbose headers   'x-cache': 'HIT',
+525 verbose headers   'x-cache-hits': '8',
+525 verbose headers   'x-timer': 'S1453548946.190192,VS0,VE0',
+525 verbose headers   vary: 'Accept' }
+526 silly get cb [ 304,
+526 silly get   { date: 'Sat, 23 Jan 2016 11:35:46 GMT',
+526 silly get     via: '1.1 varnish',
+526 silly get     'cache-control': 'max-age=300',
+526 silly get     etag: '"7BHVHFRTUOYZSVKQGJDO4PZA6"',
+526 silly get     age: '74',
+526 silly get     connection: 'keep-alive',
+526 silly get     'x-served-by': 'cache-sin6925-SIN',
+526 silly get     'x-cache': 'HIT',
+526 silly get     'x-cache-hits': '8',
+526 silly get     'x-timer': 'S1453548946.190192,VS0,VE0',
+526 silly get     vary: 'Accept' } ]
+527 verbose etag https://registry.npmjs.org/qs from cache
+528 verbose get saving qs to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\qs\.cache.json
+529 silly cache afterAdd faye-websocket@0.4.4
+530 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\faye-websocket\0.4.4\package\package.json not in flight; writing
+531 http 304 https://registry.npmjs.org/debug
+532 verbose headers { date: 'Sat, 23 Jan 2016 11:35:46 GMT',
+532 verbose headers   via: '1.1 varnish',
+532 verbose headers   'cache-control': 'max-age=300',
+532 verbose headers   etag: '"81Q55A0L72IF6R46QA8FKWTYO"',
+532 verbose headers   age: '135',
+532 verbose headers   connection: 'keep-alive',
+532 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+532 verbose headers   'x-cache': 'HIT',
+532 verbose headers   'x-cache-hits': '4',
+532 verbose headers   'x-timer': 'S1453548946.203797,VS0,VE0',
+532 verbose headers   vary: 'Accept' }
+533 silly get cb [ 304,
+533 silly get   { date: 'Sat, 23 Jan 2016 11:35:46 GMT',
+533 silly get     via: '1.1 varnish',
+533 silly get     'cache-control': 'max-age=300',
+533 silly get     etag: '"81Q55A0L72IF6R46QA8FKWTYO"',
+533 silly get     age: '135',
+533 silly get     connection: 'keep-alive',
+533 silly get     'x-served-by': 'cache-sin6926-SIN',
+533 silly get     'x-cache': 'HIT',
+533 silly get     'x-cache-hits': '4',
+533 silly get     'x-timer': 'S1453548946.203797,VS0,VE0',
+533 silly get     vary: 'Accept' } ]
+534 verbose etag https://registry.npmjs.org/debug from cache
+535 verbose get saving debug to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\debug\.cache.json
+536 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\faye-websocket\0.4.4\package\package.json written
+537 silly resolveWithNewModule debug@0.7.4 checking installable status
+538 silly cache add args [ 'debug@~0.7.0', null ]
+539 verbose cache add spec debug@~0.7.0
+540 silly cache add parsed spec Result {
+540 silly cache add   raw: 'debug@~0.7.0',
+540 silly cache add   scope: null,
+540 silly cache add   name: 'debug',
+540 silly cache add   rawSpec: '~0.7.0',
+540 silly cache add   spec: '>=0.7.0 <0.8.0',
+540 silly cache add   type: 'range' }
+541 silly addNamed debug@>=0.7.0 <0.8.0
+542 verbose addNamed ">=0.7.0 <0.8.0" is a valid semver range for debug
+543 silly addNameRange { name: 'debug', range: '>=0.7.0 <0.8.0', hasData: false }
+544 silly mapToRegistry name debug
+545 silly mapToRegistry using default registry
+546 silly mapToRegistry registry https://registry.npmjs.org/
+547 silly mapToRegistry uri https://registry.npmjs.org/debug
+548 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+549 silly resolveWithNewModule qs@0.5.6 checking installable status
+550 silly cache add args [ 'qs@~0.5.2', null ]
+551 verbose cache add spec qs@~0.5.2
+552 silly cache add parsed spec Result {
+552 silly cache add   raw: 'qs@~0.5.2',
+552 silly cache add   scope: null,
+552 silly cache add   name: 'qs',
+552 silly cache add   rawSpec: '~0.5.2',
+552 silly cache add   spec: '>=0.5.2 <0.6.0',
+552 silly cache add   type: 'range' }
+553 silly addNamed qs@>=0.5.2 <0.6.0
+554 verbose addNamed ">=0.5.2 <0.6.0" is a valid semver range for qs
+555 silly addNameRange { name: 'qs', range: '>=0.5.2 <0.6.0', hasData: false }
+556 silly mapToRegistry name qs
+557 silly mapToRegistry using default registry
+558 silly mapToRegistry registry https://registry.npmjs.org/
+559 silly mapToRegistry uri https://registry.npmjs.org/qs
+560 verbose addNameRange registry:https://registry.npmjs.org/qs not in flight; fetching
+561 verbose get https://registry.npmjs.org/debug not expired, no request
+562 silly addNameRange number 2 { name: 'debug', range: '>=0.7.0 <0.8.0', hasData: true }
+563 silly addNameRange versions [ 'debug',
+563 silly addNameRange   [ '0.0.1',
+563 silly addNameRange     '0.1.0',
+563 silly addNameRange     '0.2.0',
+563 silly addNameRange     '0.3.0',
+563 silly addNameRange     '0.4.0',
+563 silly addNameRange     '0.4.1',
+563 silly addNameRange     '0.5.0',
+563 silly addNameRange     '0.6.0',
+563 silly addNameRange     '0.7.0',
+563 silly addNameRange     '0.7.1',
+563 silly addNameRange     '0.7.2',
+563 silly addNameRange     '0.7.3',
+563 silly addNameRange     '0.7.4',
+563 silly addNameRange     '0.8.0',
+563 silly addNameRange     '0.8.1',
+563 silly addNameRange     '1.0.0',
+563 silly addNameRange     '1.0.1',
+563 silly addNameRange     '1.0.2',
+563 silly addNameRange     '1.0.3',
+563 silly addNameRange     '1.0.4',
+563 silly addNameRange     '2.0.0',
+563 silly addNameRange     '2.1.0',
+563 silly addNameRange     '2.1.1',
+563 silly addNameRange     '2.1.2',
+563 silly addNameRange     '2.1.3',
+563 silly addNameRange     '2.2.0' ] ]
+564 silly addNamed debug@0.7.4
+565 verbose addNamed "0.7.4" is a plain semver version for debug
+566 verbose get https://registry.npmjs.org/qs not expired, no request
+567 silly addNameRange number 2 { name: 'qs', range: '>=0.5.2 <0.6.0', hasData: true }
+568 silly addNameRange versions [ 'qs',
+568 silly addNameRange   [ '0.0.1',
+568 silly addNameRange     '0.0.2',
+568 silly addNameRange     '0.0.3',
+568 silly addNameRange     '0.0.4',
+568 silly addNameRange     '0.0.5',
+568 silly addNameRange     '0.0.6',
+568 silly addNameRange     '0.0.7',
+568 silly addNameRange     '0.1.0',
+568 silly addNameRange     '0.2.0',
+568 silly addNameRange     '0.3.0',
+568 silly addNameRange     '0.3.1',
+568 silly addNameRange     '0.3.2',
+568 silly addNameRange     '0.4.0',
+568 silly addNameRange     '0.4.1',
+568 silly addNameRange     '0.4.2',
+568 silly addNameRange     '0.5.0',
+568 silly addNameRange     '0.5.1',
+568 silly addNameRange     '0.5.2',
+568 silly addNameRange     '0.5.3',
+568 silly addNameRange     '0.5.4',
+568 silly addNameRange     '0.5.5',
+568 silly addNameRange     '0.5.6',
+568 silly addNameRange     '0.6.0',
+568 silly addNameRange     '0.6.1',
+568 silly addNameRange     '0.6.2',
+568 silly addNameRange     '0.6.3',
+568 silly addNameRange     '0.6.4',
+568 silly addNameRange     '0.6.5',
+568 silly addNameRange     '0.6.6',
+568 silly addNameRange     '1.0.0',
+568 silly addNameRange     '1.0.1',
+568 silly addNameRange     '1.0.2',
+568 silly addNameRange     '1.1.0',
+568 silly addNameRange     '1.2.0',
+568 silly addNameRange     '1.2.1',
+568 silly addNameRange     '1.2.2',
+568 silly addNameRange     '2.0.0',
+568 silly addNameRange     '2.1.0',
+568 silly addNameRange     '2.2.0',
+568 silly addNameRange     '2.2.1',
+568 silly addNameRange     '2.2.2',
+568 silly addNameRange     '2.2.3',
+568 silly addNameRange     '2.2.4',
+568 silly addNameRange     '2.2.5',
+568 silly addNameRange     '2.3.0',
+568 silly addNameRange     '2.3.1',
+568 silly addNameRange     '2.3.2',
+568 silly addNameRange     '2.3.3',
+568 silly addNameRange     '2.4.0',
+568 silly addNameRange     '2.4.1',
+568 silly addNameRange     '2.4.2',
+568 silly addNameRange     '3.0.0',
+568 silly addNameRange     '3.1.0',
+568 silly addNameRange     '4.0.0',
+568 silly addNameRange     '5.0.0',
+568 silly addNameRange     '5.1.0',
+568 silly addNameRange     '5.2.0',
+568 silly addNameRange     '6.0.0',
+568 silly addNameRange     '6.0.1',
+568 silly addNameRange     '6.0.2' ] ]
+569 silly addNamed qs@0.5.6
+570 verbose addNamed "0.5.6" is a plain semver version for qs
+571 silly cache afterAdd debug@0.7.4
+572 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\debug\0.7.4\package\package.json not in flight; writing
+573 silly cache afterAdd qs@0.5.6
+574 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\qs\0.5.6\package\package.json not in flight; writing
+575 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\debug\0.7.4\package\package.json written
+576 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\qs\0.5.6\package\package.json written
+577 http 304 https://registry.npmjs.org/noptify
+578 verbose headers { date: 'Sat, 23 Jan 2016 11:35:46 GMT',
+578 verbose headers   via: '1.1 varnish',
+578 verbose headers   'cache-control': 'max-age=300',
+578 verbose headers   etag: '"54FU4PQ3TD6NXXJ8GHL2OMF67"',
+578 verbose headers   age: '233',
+578 verbose headers   connection: 'keep-alive',
+578 verbose headers   'x-served-by': 'cache-sin6925-SIN',
+578 verbose headers   'x-cache': 'HIT',
+578 verbose headers   'x-cache-hits': '1',
+578 verbose headers   'x-timer': 'S1453548946.266237,VS0,VE0',
+578 verbose headers   vary: 'Accept' }
+579 silly get cb [ 304,
+579 silly get   { date: 'Sat, 23 Jan 2016 11:35:46 GMT',
+579 silly get     via: '1.1 varnish',
+579 silly get     'cache-control': 'max-age=300',
+579 silly get     etag: '"54FU4PQ3TD6NXXJ8GHL2OMF67"',
+579 silly get     age: '233',
+579 silly get     connection: 'keep-alive',
+579 silly get     'x-served-by': 'cache-sin6925-SIN',
+579 silly get     'x-cache': 'HIT',
+579 silly get     'x-cache-hits': '1',
+579 silly get     'x-timer': 'S1453548946.266237,VS0,VE0',
+579 silly get     vary: 'Accept' } ]
+580 verbose etag https://registry.npmjs.org/noptify from cache
+581 verbose get saving noptify to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\noptify\.cache.json
+582 silly resolveWithNewModule noptify@0.0.3 checking installable status
+583 silly cache add args [ 'noptify@~0.0.3', null ]
+584 verbose cache add spec noptify@~0.0.3
+585 silly cache add parsed spec Result {
+585 silly cache add   raw: 'noptify@~0.0.3',
+585 silly cache add   scope: null,
+585 silly cache add   name: 'noptify',
+585 silly cache add   rawSpec: '~0.0.3',
+585 silly cache add   spec: '>=0.0.3 <0.1.0',
+585 silly cache add   type: 'range' }
+586 silly addNamed noptify@>=0.0.3 <0.1.0
+587 verbose addNamed ">=0.0.3 <0.1.0" is a valid semver range for noptify
+588 silly addNameRange { name: 'noptify', range: '>=0.0.3 <0.1.0', hasData: false }
+589 silly mapToRegistry name noptify
+590 silly mapToRegistry using default registry
+591 silly mapToRegistry registry https://registry.npmjs.org/
+592 silly mapToRegistry uri https://registry.npmjs.org/noptify
+593 verbose addNameRange registry:https://registry.npmjs.org/noptify not in flight; fetching
+594 verbose get https://registry.npmjs.org/noptify not expired, no request
+595 silly addNameRange number 2 { name: 'noptify', range: '>=0.0.3 <0.1.0', hasData: true }
+596 silly addNameRange versions [ 'noptify', [ '0.0.1', '0.0.2', '0.0.3' ] ]
+597 silly addNamed noptify@0.0.3
+598 verbose addNamed "0.0.3" is a plain semver version for noptify
+599 silly cache afterAdd noptify@0.0.3
+600 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\noptify\0.0.3\package\package.json not in flight; writing
+601 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\noptify\0.0.3\package\package.json written
+602 silly fetchNamedPackageData nopt
+603 silly mapToRegistry name nopt
+604 silly mapToRegistry using default registry
+605 silly mapToRegistry registry https://registry.npmjs.org/
+606 silly mapToRegistry uri https://registry.npmjs.org/nopt
+607 verbose request uri https://registry.npmjs.org/nopt
+608 verbose request no auth needed
+609 info attempt registry request try #1 at 5:05:46 PM
+610 verbose etag "8L92ZJ97BFUEEOIPU74GGDJ1G"
+611 http request GET https://registry.npmjs.org/nopt
+612 http 304 https://registry.npmjs.org/nopt
+613 verbose headers { date: 'Sat, 23 Jan 2016 11:35:47 GMT',
+613 verbose headers   via: '1.1 varnish',
+613 verbose headers   'cache-control': 'max-age=300',
+613 verbose headers   etag: '"8L92ZJ97BFUEEOIPU74GGDJ1G"',
+613 verbose headers   age: '5',
+613 verbose headers   connection: 'keep-alive',
+613 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+613 verbose headers   'x-cache': 'HIT',
+613 verbose headers   'x-cache-hits': '1',
+613 verbose headers   'x-timer': 'S1453548947.088605,VS0,VE0',
+613 verbose headers   vary: 'Accept' }
+614 silly get cb [ 304,
+614 silly get   { date: 'Sat, 23 Jan 2016 11:35:47 GMT',
+614 silly get     via: '1.1 varnish',
+614 silly get     'cache-control': 'max-age=300',
+614 silly get     etag: '"8L92ZJ97BFUEEOIPU74GGDJ1G"',
+614 silly get     age: '5',
+614 silly get     connection: 'keep-alive',
+614 silly get     'x-served-by': 'cache-sin6924-SIN',
+614 silly get     'x-cache': 'HIT',
+614 silly get     'x-cache-hits': '1',
+614 silly get     'x-timer': 'S1453548947.088605,VS0,VE0',
+614 silly get     vary: 'Accept' } ]
+615 verbose etag https://registry.npmjs.org/nopt from cache
+616 verbose get saving nopt to C:\Users\Gaurav\AppData\Roaming\npm-cache\registry.npmjs.org\nopt\.cache.json
+617 silly resolveWithNewModule nopt@2.0.0 checking installable status
+618 silly cache add args [ 'nopt@~2.0.0', null ]
+619 verbose cache add spec nopt@~2.0.0
+620 silly cache add parsed spec Result {
+620 silly cache add   raw: 'nopt@~2.0.0',
+620 silly cache add   scope: null,
+620 silly cache add   name: 'nopt',
+620 silly cache add   rawSpec: '~2.0.0',
+620 silly cache add   spec: '>=2.0.0 <2.1.0',
+620 silly cache add   type: 'range' }
+621 silly addNamed nopt@>=2.0.0 <2.1.0
+622 verbose addNamed ">=2.0.0 <2.1.0" is a valid semver range for nopt
+623 silly addNameRange { name: 'nopt', range: '>=2.0.0 <2.1.0', hasData: false }
+624 silly mapToRegistry name nopt
+625 silly mapToRegistry using default registry
+626 silly mapToRegistry registry https://registry.npmjs.org/
+627 silly mapToRegistry uri https://registry.npmjs.org/nopt
+628 verbose addNameRange registry:https://registry.npmjs.org/nopt not in flight; fetching
+629 verbose get https://registry.npmjs.org/nopt not expired, no request
+630 silly addNameRange number 2 { name: 'nopt', range: '>=2.0.0 <2.1.0', hasData: true }
+631 silly addNameRange versions [ 'nopt',
+631 silly addNameRange   [ '1.0.0',
+631 silly addNameRange     '1.0.1',
+631 silly addNameRange     '1.0.2',
+631 silly addNameRange     '1.0.3',
+631 silly addNameRange     '1.0.4',
+631 silly addNameRange     '1.0.5',
+631 silly addNameRange     '1.0.6',
+631 silly addNameRange     '1.0.7',
+631 silly addNameRange     '1.0.8',
+631 silly addNameRange     '1.0.9',
+631 silly addNameRange     '1.0.10',
+631 silly addNameRange     '2.0.0',
+631 silly addNameRange     '2.1.0',
+631 silly addNameRange     '2.1.1',
+631 silly addNameRange     '2.1.2',
+631 silly addNameRange     '2.2.0',
+631 silly addNameRange     '2.2.1',
+631 silly addNameRange     '3.0.0',
+631 silly addNameRange     '3.0.1',
+631 silly addNameRange     '3.0.2',
+631 silly addNameRange     '3.0.3',
+631 silly addNameRange     '3.0.4',
+631 silly addNameRange     '3.0.5',
+631 silly addNameRange     '3.0.6' ] ]
+632 silly addNamed nopt@2.0.0
+633 verbose addNamed "2.0.0" is a plain semver version for nopt
+634 silly cache afterAdd nopt@2.0.0
+635 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\nopt\2.0.0\package\package.json not in flight; writing
+636 verbose afterAdd C:\Users\Gaurav\AppData\Roaming\npm-cache\nopt\2.0.0\package\package.json written
+637 silly loadAllDepsIntoIdealTree Finishing
+638 silly idealTree:prePrune ravindra@0.0.1
+638 silly idealTree:prePrune ├── abbrev@1.0.7
+638 silly idealTree:prePrune ├── accepts@1.2.13
+638 silly idealTree:prePrune ├── async@0.2.10
+638 silly idealTree:prePrune ├── base64-url@1.2.1
+638 silly idealTree:prePrune ├── basic-auth-connect@1.0.0
+638 silly idealTree:prePrune ├── basic-auth@1.0.3
+638 silly idealTree:prePrune ├── batch@0.5.2
+638 silly idealTree:prePrune ├── body-parser@1.13.3
+638 silly idealTree:prePrune ├── bytes@2.1.0
+638 silly idealTree:prePrune ├── compressible@2.0.7
+638 silly idealTree:prePrune ├── compression@1.5.2
+638 silly idealTree:prePrune ├── connect-livereload@0.4.1
+638 silly idealTree:prePrune ├── connect-timeout@1.6.2
+638 silly idealTree:prePrune ├── connect@2.30.2
+638 silly idealTree:prePrune ├── content-type@1.0.1
+638 silly idealTree:prePrune ├── cookie-parser@1.3.5
+638 silly idealTree:prePrune ├── cookie-signature@1.0.6
+638 silly idealTree:prePrune ├── cookie@0.1.3
+638 silly idealTree:prePrune ├── core-util-is@1.0.2
+638 silly idealTree:prePrune ├── crc@3.3.0
+638 silly idealTree:prePrune ├── csrf@3.0.0
+638 silly idealTree:prePrune ├── csurf@1.8.3
+638 silly idealTree:prePrune ├── debug@2.2.0
+638 silly idealTree:prePrune ├── depd@1.0.1
+638 silly idealTree:prePrune ├── destroy@1.0.4
+638 silly idealTree:prePrune ├── ee-first@1.1.1
+638 silly idealTree:prePrune ├─┬ errorhandler@1.4.3
+638 silly idealTree:prePrune │ ├── accepts@1.3.1
+638 silly idealTree:prePrune │ └── negotiator@0.6.0
+638 silly idealTree:prePrune ├── escape-html@1.0.3
+638 silly idealTree:prePrune ├── etag@1.7.0
+638 silly idealTree:prePrune ├── express-session@1.11.3
+638 silly idealTree:prePrune ├── faye-websocket@0.4.4
+638 silly idealTree:prePrune ├─┬ finalhandler@0.4.0
+638 silly idealTree:prePrune │ └── escape-html@1.0.2
+638 silly idealTree:prePrune ├── fresh@0.3.0
+638 silly idealTree:prePrune ├── gaze@0.5.2
+638 silly idealTree:prePrune ├─┬ glob@3.1.21
+638 silly idealTree:prePrune │ └── inherits@1.0.2
+638 silly idealTree:prePrune ├─┬ globule@0.1.0
+638 silly idealTree:prePrune │ └── lodash@1.0.2
+638 silly idealTree:prePrune ├── graceful-fs@1.2.3
+638 silly idealTree:prePrune ├─┬ grunt-contrib-concat@0.5.1
+638 silly idealTree:prePrune │ ├─┬ chalk@0.5.1
+638 silly idealTree:prePrune │ │ ├── ansi-styles@1.1.0
+638 silly idealTree:prePrune │ │ ├── escape-string-regexp@1.0.4
+638 silly idealTree:prePrune │ │ ├─┬ has-ansi@0.1.0
+638 silly idealTree:prePrune │ │ │ └── ansi-regex@0.2.1
+638 silly idealTree:prePrune │ │ ├─┬ strip-ansi@0.3.0
+638 silly idealTree:prePrune │ │ │ └── ansi-regex@0.2.1
+638 silly idealTree:prePrune │ │ └── supports-color@0.2.0
+638 silly idealTree:prePrune │ └─┬ source-map@0.3.0
+638 silly idealTree:prePrune │   └── amdefine@1.0.0
+638 silly idealTree:prePrune ├── grunt-contrib-watch@0.6.1
+638 silly idealTree:prePrune ├── grunt-express@1.4.1
+638 silly idealTree:prePrune ├── grunt-parallel@0.3.1
+638 silly idealTree:prePrune ├─┬ grunt@0.4.5
+638 silly idealTree:prePrune │ ├── async@0.1.22
+638 silly idealTree:prePrune │ ├── coffee-script@1.3.3
+638 silly idealTree:prePrune │ ├── colors@0.6.2
+638 silly idealTree:prePrune │ ├── dateformat@1.0.2-1.2.3
+638 silly idealTree:prePrune │ ├── eventemitter2@0.4.14
+638 silly idealTree:prePrune │ ├── exit@0.1.2
+638 silly idealTree:prePrune │ ├─┬ findup-sync@0.1.3
+638 silly idealTree:prePrune │ │ ├─┬ glob@3.2.11
+638 silly idealTree:prePrune │ │ │ ├── inherits@2.0.1
+638 silly idealTree:prePrune │ │ │ └─┬ minimatch@0.3.0
+638 silly idealTree:prePrune │ │ │   ├── lru-cache@2.7.3
+638 silly idealTree:prePrune │ │ │   └── sigmund@1.0.1
+638 silly idealTree:prePrune │ │ └── lodash@2.4.2
+638 silly idealTree:prePrune │ ├── getobject@0.1.0
+638 silly idealTree:prePrune │ ├─┬ glob@3.1.21
+638 silly idealTree:prePrune │ │ ├── graceful-fs@1.2.3
+638 silly idealTree:prePrune │ │ └── inherits@1.0.2
+638 silly idealTree:prePrune │ ├─┬ grunt-legacy-log@0.1.3
+638 silly idealTree:prePrune │ │ ├── grunt-legacy-log-utils@0.1.1
+638 silly idealTree:prePrune │ │ ├── lodash@2.4.2
+638 silly idealTree:prePrune │ │ └── underscore.string@2.3.3
+638 silly idealTree:prePrune │ ├── grunt-legacy-util@0.2.0
+638 silly idealTree:prePrune │ ├── hooker@0.2.3
+638 silly idealTree:prePrune │ ├── iconv-lite@0.2.11
+638 silly idealTree:prePrune │ ├─┬ js-yaml@2.0.5
+638 silly idealTree:prePrune │ │ ├─┬ argparse@0.1.16
+638 silly idealTree:prePrune │ │ │ ├── underscore.string@2.4.0
+638 silly idealTree:prePrune │ │ │ └── underscore@1.7.0
+638 silly idealTree:prePrune │ │ └── esprima@1.0.4
+638 silly idealTree:prePrune │ ├── lodash@0.9.2
+638 silly idealTree:prePrune │ ├─┬ minimatch@0.2.14
+638 silly idealTree:prePrune │ │ ├── lru-cache@2.7.3
+638 silly idealTree:prePrune │ │ └── sigmund@1.0.1
+638 silly idealTree:prePrune │ ├─┬ nopt@1.0.10
+638 silly idealTree:prePrune │ │ └── abbrev@1.0.7
+638 silly idealTree:prePrune │ ├── rimraf@2.2.8
+638 silly idealTree:prePrune │ ├── underscore.string@2.2.1
+638 silly idealTree:prePrune │ └── which@1.0.9
+638 silly idealTree:prePrune ├── http-errors@1.3.1
+638 silly idealTree:prePrune ├── iconv-lite@0.4.11
+638 silly idealTree:prePrune ├── inherits@2.0.1
+638 silly idealTree:prePrune ├── isarray@0.0.1
+638 silly idealTree:prePrune ├── lodash@2.4.2
+638 silly idealTree:prePrune ├── lpad@0.1.0
+638 silly idealTree:prePrune ├── lru-cache@2.7.3
+638 silly idealTree:prePrune ├── media-typer@0.3.0
+638 silly idealTree:prePrune ├── method-override@2.3.5
+638 silly idealTree:prePrune ├── methods@1.1.2
+638 silly idealTree:prePrune ├── mime-db@1.21.0
+638 silly idealTree:prePrune ├── mime-types@2.1.9
+638 silly idealTree:prePrune ├── mime@1.3.4
+638 silly idealTree:prePrune ├── minimatch@0.2.14
+638 silly idealTree:prePrune ├── morgan@1.6.1
+638 silly idealTree:prePrune ├── ms@0.7.1
+638 silly idealTree:prePrune ├── multiparty@3.3.2
+638 silly idealTree:prePrune ├── negotiator@0.5.3
+638 silly idealTree:prePrune ├── nopt@1.0.10
+638 silly idealTree:prePrune ├─┬ noptify@0.0.3
+638 silly idealTree:prePrune │ └── nopt@2.0.0
+638 silly idealTree:prePrune ├── on-finished@2.3.0
+638 silly idealTree:prePrune ├── on-headers@1.0.1
+638 silly idealTree:prePrune ├── open@0.0.5
+638 silly idealTree:prePrune ├── parseurl@1.3.1
+638 silly idealTree:prePrune ├── pause@0.1.0
+638 silly idealTree:prePrune ├── q@0.8.12
+638 silly idealTree:prePrune ├── qs@4.0.0
+638 silly idealTree:prePrune ├── range-parser@1.0.3
+638 silly idealTree:prePrune ├─┬ raw-body@2.1.5
+638 silly idealTree:prePrune │ ├── bytes@2.2.0
+638 silly idealTree:prePrune │ └── iconv-lite@0.4.13
+638 silly idealTree:prePrune ├── readable-stream@1.1.13
+638 silly idealTree:prePrune ├── response-time@2.3.1
+638 silly idealTree:prePrune ├── rimraf@2.2.8
+638 silly idealTree:prePrune ├── rndm@1.1.1
+638 silly idealTree:prePrune ├── scmp@1.0.0
+638 silly idealTree:prePrune ├─┬ send@0.13.1
+638 silly idealTree:prePrune │ └── depd@1.1.0
+638 silly idealTree:prePrune ├── serve-favicon@2.3.0
+638 silly idealTree:prePrune ├─┬ serve-index@1.7.2
+638 silly idealTree:prePrune │ └── escape-html@1.0.2
+638 silly idealTree:prePrune ├── serve-static@1.10.2
+638 silly idealTree:prePrune ├── sigmund@1.0.1
+638 silly idealTree:prePrune ├── statuses@1.2.1
+638 silly idealTree:prePrune ├── stream-counter@0.2.0
+638 silly idealTree:prePrune ├── string_decoder@0.10.31
+638 silly idealTree:prePrune ├── sugar@1.4.1
+638 silly idealTree:prePrune ├── temp@0.7.0
+638 silly idealTree:prePrune ├─┬ tiny-lr-fork@0.0.5
+638 silly idealTree:prePrune │ ├── debug@0.7.4
+638 silly idealTree:prePrune │ └── qs@0.5.6
+638 silly idealTree:prePrune ├── touch@0.0.3
+638 silly idealTree:prePrune ├── type-is@1.6.10
+638 silly idealTree:prePrune ├── uid-safe@2.0.0
+638 silly idealTree:prePrune ├── unpipe@1.0.0
+638 silly idealTree:prePrune ├── utils-merge@1.0.0
+638 silly idealTree:prePrune ├── vary@1.0.1
+638 silly idealTree:prePrune └── vhost@3.0.2
+639 silly loadIdealTree Finishing
+640 silly currentTree ravindra@0.0.1
+640 silly currentTree ├── abbrev@1.0.7
+640 silly currentTree ├── accepts@1.2.13
+640 silly currentTree ├── base64-url@1.2.1
+640 silly currentTree ├── basic-auth-connect@1.0.0
+640 silly currentTree ├── basic-auth@1.0.3
+640 silly currentTree ├── batch@0.5.2
+640 silly currentTree ├── body-parser@1.13.3
+640 silly currentTree ├── bytes@2.1.0
+640 silly currentTree ├── compressible@2.0.7
+640 silly currentTree ├── compression@1.5.2
+640 silly currentTree ├── connect-livereload@0.4.1
+640 silly currentTree ├── connect-timeout@1.6.2
+640 silly currentTree ├── connect@2.30.2
+640 silly currentTree ├── content-type@1.0.1
+640 silly currentTree ├── cookie-parser@1.3.5
+640 silly currentTree ├── cookie-signature@1.0.6
+640 silly currentTree ├── cookie@0.1.3
+640 silly currentTree ├── core-util-is@1.0.2
+640 silly currentTree ├── crc@3.3.0
+640 silly currentTree ├── csrf@3.0.0
+640 silly currentTree ├── csurf@1.8.3
+640 silly currentTree ├── debug@2.2.0
+640 silly currentTree ├── depd@1.0.1
+640 silly currentTree ├── destroy@1.0.4
+640 silly currentTree ├── ee-first@1.1.1
+640 silly currentTree ├─┬ errorhandler@1.4.3
+640 silly currentTree │ ├── accepts@1.3.1
+640 silly currentTree │ └── negotiator@0.6.0
+640 silly currentTree ├── escape-html@1.0.3
+640 silly currentTree ├── etag@1.7.0
+640 silly currentTree ├── express-session@1.11.3
+640 silly currentTree ├─┬ finalhandler@0.4.0
+640 silly currentTree │ └── escape-html@1.0.2
+640 silly currentTree ├── fresh@0.3.0
+640 silly currentTree ├─┬ grunt-contrib-concat@0.5.1
+640 silly currentTree │ ├─┬ chalk@0.5.1
+640 silly currentTree │ │ ├── ansi-styles@1.1.0
+640 silly currentTree │ │ ├── escape-string-regexp@1.0.4
+640 silly currentTree │ │ ├─┬ has-ansi@0.1.0
+640 silly currentTree │ │ │ └── ansi-regex@0.2.1
+640 silly currentTree │ │ ├─┬ strip-ansi@0.3.0
+640 silly currentTree │ │ │ └── ansi-regex@0.2.1
+640 silly currentTree │ │ └── supports-color@0.2.0
+640 silly currentTree │ └─┬ source-map@0.3.0
+640 silly currentTree │   └── amdefine@1.0.0
+640 silly currentTree ├─┬ grunt-contrib-watch@0.6.1
+640 silly currentTree │ ├── async@0.2.10
+640 silly currentTree │ ├─┬ gaze@0.5.2
+640 silly currentTree │ │ └─┬ globule@0.1.0
+640 silly currentTree │ │   ├─┬ glob@3.1.21
+640 silly currentTree │ │   │ ├── graceful-fs@1.2.3
+640 silly currentTree │ │   │ └── inherits@1.0.2
+640 silly currentTree │ │   ├── lodash@1.0.2
+640 silly currentTree │ │   └─┬ minimatch@0.2.14
+640 silly currentTree │ │     ├── lru-cache@2.7.3
+640 silly currentTree │ │     └── sigmund@1.0.1
+640 silly currentTree │ ├── lodash@2.4.2
+640 silly currentTree │ └─┬ tiny-lr-fork@0.0.5
+640 silly currentTree │   ├── debug@0.7.4
+640 silly currentTree │   ├── faye-websocket@0.4.4
+640 silly currentTree │   ├─┬ noptify@0.0.3
+640 silly currentTree │   │ └─┬ nopt@2.0.0
+640 silly currentTree │   │   └── abbrev@1.0.7
+640 silly currentTree │   └── qs@0.5.6
+640 silly currentTree ├── grunt-express@1.4.1
+640 silly currentTree ├── grunt-parallel@0.3.1
+640 silly currentTree ├─┬ grunt@0.4.5
+640 silly currentTree │ ├── async@0.1.22
+640 silly currentTree │ ├── coffee-script@1.3.3
+640 silly currentTree │ ├── colors@0.6.2
+640 silly currentTree │ ├── dateformat@1.0.2-1.2.3
+640 silly currentTree │ ├── eventemitter2@0.4.14
+640 silly currentTree │ ├── exit@0.1.2
+640 silly currentTree │ ├─┬ findup-sync@0.1.3
+640 silly currentTree │ │ ├─┬ glob@3.2.11
+640 silly currentTree │ │ │ ├── inherits@2.0.1
+640 silly currentTree │ │ │ └─┬ minimatch@0.3.0
+640 silly currentTree │ │ │   ├── lru-cache@2.7.3
+640 silly currentTree │ │ │   └── sigmund@1.0.1
+640 silly currentTree │ │ └── lodash@2.4.2
+640 silly currentTree │ ├── getobject@0.1.0
+640 silly currentTree │ ├─┬ glob@3.1.21
+640 silly currentTree │ │ ├── graceful-fs@1.2.3
+640 silly currentTree │ │ └── inherits@1.0.2
+640 silly currentTree │ ├─┬ grunt-legacy-log@0.1.3
+640 silly currentTree │ │ ├── grunt-legacy-log-utils@0.1.1
+640 silly currentTree │ │ ├── lodash@2.4.2
+640 silly currentTree │ │ └── underscore.string@2.3.3
+640 silly currentTree │ ├── grunt-legacy-util@0.2.0
+640 silly currentTree │ ├── hooker@0.2.3
+640 silly currentTree │ ├── iconv-lite@0.2.11
+640 silly currentTree │ ├─┬ js-yaml@2.0.5
+640 silly currentTree │ │ ├─┬ argparse@0.1.16
+640 silly currentTree │ │ │ ├── underscore.string@2.4.0
+640 silly currentTree │ │ │ └── underscore@1.7.0
+640 silly currentTree │ │ └── esprima@1.0.4
+640 silly currentTree │ ├── lodash@0.9.2
+640 silly currentTree │ ├─┬ minimatch@0.2.14
+640 silly currentTree │ │ ├── lru-cache@2.7.3
+640 silly currentTree │ │ └── sigmund@1.0.1
+640 silly currentTree │ ├─┬ nopt@1.0.10
+640 silly currentTree │ │ └── abbrev@1.0.7
+640 silly currentTree │ ├── rimraf@2.2.8
+640 silly currentTree │ ├── underscore.string@2.2.1
+640 silly currentTree │ └── which@1.0.9
+640 silly currentTree ├── http-errors@1.3.1
+640 silly currentTree ├── iconv-lite@0.4.11
+640 silly currentTree ├── inherits@2.0.1
+640 silly currentTree ├── isarray@0.0.1
+640 silly currentTree ├── lpad@0.1.0
+640 silly currentTree ├── media-typer@0.3.0
+640 silly currentTree ├── method-override@2.3.5
+640 silly currentTree ├── methods@1.1.2
+640 silly currentTree ├── mime-db@1.21.0
+640 silly currentTree ├── mime-types@2.1.9
+640 silly currentTree ├── mime@1.3.4
+640 silly currentTree ├── morgan@1.6.1
+640 silly currentTree ├── ms@0.7.1
+640 silly currentTree ├── multiparty@3.3.2
+640 silly currentTree ├── negotiator@0.5.3
+640 silly currentTree ├── nopt@1.0.10
+640 silly currentTree ├── on-finished@2.3.0
+640 silly currentTree ├── on-headers@1.0.1
+640 silly currentTree ├── open@0.0.5
+640 silly currentTree ├── parseurl@1.3.1
+640 silly currentTree ├── pause@0.1.0
+640 silly currentTree ├── q@0.8.12
+640 silly currentTree ├── qs@4.0.0
+640 silly currentTree ├── range-parser@1.0.3
+640 silly currentTree ├─┬ raw-body@2.1.5
+640 silly currentTree │ ├── bytes@2.2.0
+640 silly currentTree │ └── iconv-lite@0.4.13
+640 silly currentTree ├── readable-stream@1.1.13
+640 silly currentTree ├── response-time@2.3.1
+640 silly currentTree ├── rimraf@2.2.8
+640 silly currentTree ├── rndm@1.1.1
+640 silly currentTree ├── scmp@1.0.0
+640 silly currentTree ├─┬ send@0.13.1
+640 silly currentTree │ └── depd@1.1.0
+640 silly currentTree ├── serve-favicon@2.3.0
+640 silly currentTree ├─┬ serve-index@1.7.2
+640 silly currentTree │ └── escape-html@1.0.2
+640 silly currentTree ├── serve-static@1.10.2
+640 silly currentTree ├── statuses@1.2.1
+640 silly currentTree ├── stream-counter@0.2.0
+640 silly currentTree ├── string_decoder@0.10.31
+640 silly currentTree ├── sugar@1.4.1
+640 silly currentTree ├── temp@0.7.0
+640 silly currentTree ├── touch@0.0.3
+640 silly currentTree ├── type-is@1.6.10
+640 silly currentTree ├── uid-safe@2.0.0
+640 silly currentTree ├── unpipe@1.0.0
+640 silly currentTree ├── utils-merge@1.0.0
+640 silly currentTree ├── vary@1.0.1
+640 silly currentTree └── vhost@3.0.2
+641 silly idealTree ravindra@0.0.1
+641 silly idealTree ├── abbrev@1.0.7
+641 silly idealTree ├── accepts@1.2.13
+641 silly idealTree ├── async@0.2.10
+641 silly idealTree ├── base64-url@1.2.1
+641 silly idealTree ├── basic-auth-connect@1.0.0
+641 silly idealTree ├── basic-auth@1.0.3
+641 silly idealTree ├── batch@0.5.2
+641 silly idealTree ├── body-parser@1.13.3
+641 silly idealTree ├── bytes@2.1.0
+641 silly idealTree ├── compressible@2.0.7
+641 silly idealTree ├── compression@1.5.2
+641 silly idealTree ├── connect-livereload@0.4.1
+641 silly idealTree ├── connect-timeout@1.6.2
+641 silly idealTree ├── connect@2.30.2
+641 silly idealTree ├── content-type@1.0.1
+641 silly idealTree ├── cookie-parser@1.3.5
+641 silly idealTree ├── cookie-signature@1.0.6
+641 silly idealTree ├── cookie@0.1.3
+641 silly idealTree ├── core-util-is@1.0.2
+641 silly idealTree ├── crc@3.3.0
+641 silly idealTree ├── csrf@3.0.0
+641 silly idealTree ├── csurf@1.8.3
+641 silly idealTree ├── debug@2.2.0
+641 silly idealTree ├── depd@1.0.1
+641 silly idealTree ├── destroy@1.0.4
+641 silly idealTree ├── ee-first@1.1.1
+641 silly idealTree ├─┬ errorhandler@1.4.3
+641 silly idealTree │ ├── accepts@1.3.1
+641 silly idealTree │ └── negotiator@0.6.0
+641 silly idealTree ├── escape-html@1.0.3
+641 silly idealTree ├── etag@1.7.0
+641 silly idealTree ├── express-session@1.11.3
+641 silly idealTree ├── faye-websocket@0.4.4
+641 silly idealTree ├─┬ finalhandler@0.4.0
+641 silly idealTree │ └── escape-html@1.0.2
+641 silly idealTree ├── fresh@0.3.0
+641 silly idealTree ├── gaze@0.5.2
+641 silly idealTree ├─┬ glob@3.1.21
+641 silly idealTree │ └── inherits@1.0.2
+641 silly idealTree ├─┬ globule@0.1.0
+641 silly idealTree │ └── lodash@1.0.2
+641 silly idealTree ├── graceful-fs@1.2.3
+641 silly idealTree ├─┬ grunt-contrib-concat@0.5.1
+641 silly idealTree │ ├─┬ chalk@0.5.1
+641 silly idealTree │ │ ├── ansi-styles@1.1.0
+641 silly idealTree │ │ ├── escape-string-regexp@1.0.4
+641 silly idealTree │ │ ├─┬ has-ansi@0.1.0
+641 silly idealTree │ │ │ └── ansi-regex@0.2.1
+641 silly idealTree │ │ ├─┬ strip-ansi@0.3.0
+641 silly idealTree │ │ │ └── ansi-regex@0.2.1
+641 silly idealTree │ │ └── supports-color@0.2.0
+641 silly idealTree │ └─┬ source-map@0.3.0
+641 silly idealTree │   └── amdefine@1.0.0
+641 silly idealTree ├── grunt-contrib-watch@0.6.1
+641 silly idealTree ├── grunt-express@1.4.1
+641 silly idealTree ├── grunt-parallel@0.3.1
+641 silly idealTree ├─┬ grunt@0.4.5
+641 silly idealTree │ ├── async@0.1.22
+641 silly idealTree │ ├── coffee-script@1.3.3
+641 silly idealTree │ ├── colors@0.6.2
+641 silly idealTree │ ├── dateformat@1.0.2-1.2.3
+641 silly idealTree │ ├── eventemitter2@0.4.14
+641 silly idealTree │ ├── exit@0.1.2
+641 silly idealTree │ ├─┬ findup-sync@0.1.3
+641 silly idealTree │ │ ├─┬ glob@3.2.11
+641 silly idealTree │ │ │ ├── inherits@2.0.1
+641 silly idealTree │ │ │ └─┬ minimatch@0.3.0
+641 silly idealTree │ │ │   ├── lru-cache@2.7.3
+641 silly idealTree │ │ │   └── sigmund@1.0.1
+641 silly idealTree │ │ └── lodash@2.4.2
+641 silly idealTree │ ├── getobject@0.1.0
+641 silly idealTree │ ├─┬ glob@3.1.21
+641 silly idealTree │ │ ├── graceful-fs@1.2.3
+641 silly idealTree │ │ └── inherits@1.0.2
+641 silly idealTree │ ├─┬ grunt-legacy-log@0.1.3
+641 silly idealTree │ │ ├── grunt-legacy-log-utils@0.1.1
+641 silly idealTree │ │ ├── lodash@2.4.2
+641 silly idealTree │ │ └── underscore.string@2.3.3
+641 silly idealTree │ ├── grunt-legacy-util@0.2.0
+641 silly idealTree │ ├── hooker@0.2.3
+641 silly idealTree │ ├── iconv-lite@0.2.11
+641 silly idealTree │ ├─┬ js-yaml@2.0.5
+641 silly idealTree │ │ ├─┬ argparse@0.1.16
+641 silly idealTree │ │ │ ├── underscore.string@2.4.0
+641 silly idealTree │ │ │ └── underscore@1.7.0
+641 silly idealTree │ │ └── esprima@1.0.4
+641 silly idealTree │ ├── lodash@0.9.2
+641 silly idealTree │ ├─┬ minimatch@0.2.14
+641 silly idealTree │ │ ├── lru-cache@2.7.3
+641 silly idealTree │ │ └── sigmund@1.0.1
+641 silly idealTree │ ├─┬ nopt@1.0.10
+641 silly idealTree │ │ └── abbrev@1.0.7
+641 silly idealTree │ ├── rimraf@2.2.8
+641 silly idealTree │ ├── underscore.string@2.2.1
+641 silly idealTree │ └── which@1.0.9
+641 silly idealTree ├── http-errors@1.3.1
+641 silly idealTree ├── iconv-lite@0.4.11
+641 silly idealTree ├── inherits@2.0.1
+641 silly idealTree ├── isarray@0.0.1
+641 silly idealTree ├── lodash@2.4.2
+641 silly idealTree ├── lpad@0.1.0
+641 silly idealTree ├── lru-cache@2.7.3
+641 silly idealTree ├── media-typer@0.3.0
+641 silly idealTree ├── method-override@2.3.5
+641 silly idealTree ├── methods@1.1.2
+641 silly idealTree ├── mime-db@1.21.0
+641 silly idealTree ├── mime-types@2.1.9
+641 silly idealTree ├── mime@1.3.4
+641 silly idealTree ├── minimatch@0.2.14
+641 silly idealTree ├── morgan@1.6.1
+641 silly idealTree ├── ms@0.7.1
+641 silly idealTree ├── multiparty@3.3.2
+641 silly idealTree ├── negotiator@0.5.3
+641 silly idealTree ├── nopt@1.0.10
+641 silly idealTree ├─┬ noptify@0.0.3
+641 silly idealTree │ └── nopt@2.0.0
+641 silly idealTree ├── on-finished@2.3.0
+641 silly idealTree ├── on-headers@1.0.1
+641 silly idealTree ├── open@0.0.5
+641 silly idealTree ├── parseurl@1.3.1
+641 silly idealTree ├── pause@0.1.0
+641 silly idealTree ├── q@0.8.12
+641 silly idealTree ├── qs@4.0.0
+641 silly idealTree ├── range-parser@1.0.3
+641 silly idealTree ├─┬ raw-body@2.1.5
+641 silly idealTree │ ├── bytes@2.2.0
+641 silly idealTree │ └── iconv-lite@0.4.13
+641 silly idealTree ├── readable-stream@1.1.13
+641 silly idealTree ├── response-time@2.3.1
+641 silly idealTree ├── rimraf@2.2.8
+641 silly idealTree ├── rndm@1.1.1
+641 silly idealTree ├── scmp@1.0.0
+641 silly idealTree ├─┬ send@0.13.1
+641 silly idealTree │ └── depd@1.1.0
+641 silly idealTree ├── serve-favicon@2.3.0
+641 silly idealTree ├─┬ serve-index@1.7.2
+641 silly idealTree │ └── escape-html@1.0.2
+641 silly idealTree ├── serve-static@1.10.2
+641 silly idealTree ├── sigmund@1.0.1
+641 silly idealTree ├── statuses@1.2.1
+641 silly idealTree ├── stream-counter@0.2.0
+641 silly idealTree ├── string_decoder@0.10.31
+641 silly idealTree ├── sugar@1.4.1
+641 silly idealTree ├── temp@0.7.0
+641 silly idealTree ├─┬ tiny-lr-fork@0.0.5
+641 silly idealTree │ ├── debug@0.7.4
+641 silly idealTree │ └── qs@0.5.6
+641 silly idealTree ├── touch@0.0.3
+641 silly idealTree ├── type-is@1.6.10
+641 silly idealTree ├── uid-safe@2.0.0
+641 silly idealTree ├── unpipe@1.0.0
+641 silly idealTree ├── utils-merge@1.0.0
+641 silly idealTree ├── vary@1.0.1
+641 silly idealTree └── vhost@3.0.2
+642 silly generateActionsToTake Starting
+643 silly install generateActionsToTake
+644 silly generateActionsToTake Finishing
+645 silly diffTrees action count 19
+646 silly diffTrees move async@0.2.10
+647 silly diffTrees move faye-websocket@0.4.4
+648 silly diffTrees move inherits@1.0.2
+649 silly diffTrees move lodash@1.0.2
+650 silly diffTrees move graceful-fs@1.2.3
+651 silly diffTrees remove abbrev@1.0.7
+652 silly diffTrees move lodash@2.4.2
+653 silly diffTrees move lru-cache@2.7.3
+654 silly diffTrees move nopt@2.0.0
+655 silly diffTrees move noptify@0.0.3
+656 silly diffTrees move sigmund@1.0.1
+657 silly diffTrees move minimatch@0.2.14
+658 silly diffTrees move glob@3.1.21
+659 silly diffTrees move globule@0.1.0
+660 silly diffTrees move gaze@0.5.2
+661 silly diffTrees move debug@0.7.4
+662 silly diffTrees move qs@0.5.6
+663 silly diffTrees move tiny-lr-fork@0.0.5
+664 silly diffTrees update grunt-contrib-watch@0.6.1
+665 silly decomposeActions action count 94
+666 silly decomposeActions move async@0.2.10
+667 silly decomposeActions build async@0.2.10
+668 silly decomposeActions install async@0.2.10
+669 silly decomposeActions postinstall async@0.2.10
+670 silly decomposeActions test async@0.2.10
+671 silly decomposeActions move faye-websocket@0.4.4
+672 silly decomposeActions build faye-websocket@0.4.4
+673 silly decomposeActions install faye-websocket@0.4.4
+674 silly decomposeActions postinstall faye-websocket@0.4.4
+675 silly decomposeActions test faye-websocket@0.4.4
+676 silly decomposeActions move inherits@1.0.2
+677 silly decomposeActions build inherits@1.0.2
+678 silly decomposeActions install inherits@1.0.2
+679 silly decomposeActions postinstall inherits@1.0.2
+680 silly decomposeActions test inherits@1.0.2
+681 silly decomposeActions move lodash@1.0.2
+682 silly decomposeActions build lodash@1.0.2
+683 silly decomposeActions install lodash@1.0.2
+684 silly decomposeActions postinstall lodash@1.0.2
+685 silly decomposeActions test lodash@1.0.2
+686 silly decomposeActions move graceful-fs@1.2.3
+687 silly decomposeActions build graceful-fs@1.2.3
+688 silly decomposeActions install graceful-fs@1.2.3
+689 silly decomposeActions postinstall graceful-fs@1.2.3
+690 silly decomposeActions test graceful-fs@1.2.3
+691 silly decomposeActions remove abbrev@1.0.7
+692 silly decomposeActions move lodash@2.4.2
+693 silly decomposeActions build lodash@2.4.2
+694 silly decomposeActions install lodash@2.4.2
+695 silly decomposeActions postinstall lodash@2.4.2
+696 silly decomposeActions test lodash@2.4.2
+697 silly decomposeActions move lru-cache@2.7.3
+698 silly decomposeActions build lru-cache@2.7.3
+699 silly decomposeActions install lru-cache@2.7.3
+700 silly decomposeActions postinstall lru-cache@2.7.3
+701 silly decomposeActions test lru-cache@2.7.3
+702 silly decomposeActions move nopt@2.0.0
+703 silly decomposeActions build nopt@2.0.0
+704 silly decomposeActions install nopt@2.0.0
+705 silly decomposeActions postinstall nopt@2.0.0
+706 silly decomposeActions test nopt@2.0.0
+707 silly decomposeActions move noptify@0.0.3
+708 silly decomposeActions build noptify@0.0.3
+709 silly decomposeActions install noptify@0.0.3
+710 silly decomposeActions postinstall noptify@0.0.3
+711 silly decomposeActions test noptify@0.0.3
+712 silly decomposeActions move sigmund@1.0.1
+713 silly decomposeActions build sigmund@1.0.1
+714 silly decomposeActions install sigmund@1.0.1
+715 silly decomposeActions postinstall sigmund@1.0.1
+716 silly decomposeActions test sigmund@1.0.1
+717 silly decomposeActions move minimatch@0.2.14
+718 silly decomposeActions build minimatch@0.2.14
+719 silly decomposeActions install minimatch@0.2.14
+720 silly decomposeActions postinstall minimatch@0.2.14
+721 silly decomposeActions test minimatch@0.2.14
+722 silly decomposeActions move glob@3.1.21
+723 silly decomposeActions build glob@3.1.21
+724 silly decomposeActions install glob@3.1.21
+725 silly decomposeActions postinstall glob@3.1.21
+726 silly decomposeActions test glob@3.1.21
+727 silly decomposeActions move globule@0.1.0
+728 silly decomposeActions build globule@0.1.0
+729 silly decomposeActions install globule@0.1.0
+730 silly decomposeActions postinstall globule@0.1.0
+731 silly decomposeActions test globule@0.1.0
+732 silly decomposeActions move gaze@0.5.2
+733 silly decomposeActions build gaze@0.5.2
+734 silly decomposeActions install gaze@0.5.2
+735 silly decomposeActions postinstall gaze@0.5.2
+736 silly decomposeActions test gaze@0.5.2
+737 silly decomposeActions move debug@0.7.4
+738 silly decomposeActions build debug@0.7.4
+739 silly decomposeActions install debug@0.7.4
+740 silly decomposeActions postinstall debug@0.7.4
+741 silly decomposeActions test debug@0.7.4
+742 silly decomposeActions move qs@0.5.6
+743 silly decomposeActions build qs@0.5.6
+744 silly decomposeActions install qs@0.5.6
+745 silly decomposeActions postinstall qs@0.5.6
+746 silly decomposeActions test qs@0.5.6
+747 silly decomposeActions move tiny-lr-fork@0.0.5
+748 silly decomposeActions build tiny-lr-fork@0.0.5
+749 silly decomposeActions install tiny-lr-fork@0.0.5
+750 silly decomposeActions postinstall tiny-lr-fork@0.0.5
+751 silly decomposeActions test tiny-lr-fork@0.0.5
+752 silly decomposeActions fetch grunt-contrib-watch@0.6.1
+753 silly decomposeActions extract grunt-contrib-watch@0.6.1
+754 silly decomposeActions preinstall grunt-contrib-watch@0.6.1
+755 silly decomposeActions build grunt-contrib-watch@0.6.1
+756 silly decomposeActions install grunt-contrib-watch@0.6.1
+757 silly decomposeActions postinstall grunt-contrib-watch@0.6.1
+758 silly decomposeActions test grunt-contrib-watch@0.6.1
+759 silly decomposeActions finalize grunt-contrib-watch@0.6.1
+760 silly executeActions Starting
+761 silly install executeActions
+762 silly doSerial global-install 0
+763 silly doParallel fetch 1
+764 verbose lock using C:\Users\Gaurav\AppData\Roaming\npm-cache\_locks\staging-92de958761d2b6db.lock for C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\.staging
+765 silly doParallel extract 1
+766 silly extract grunt-contrib-watch@0.6.1
+767 verbose unbuild node_modules\.staging\grunt-contrib-watch-6ffa244178e0d234016c1a4f14054fc4
+768 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\.staging\grunt-contrib-watch-6ffa244178e0d234016c1a4f14054fc4 is being purged from base C:\Users\Gaurav\Desktop\Ravindra Bhawan
+769 verbose gentlyRm don't care about contents; nuking C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\.staging\grunt-contrib-watch-6ffa244178e0d234016c1a4f14054fc4
+770 verbose tar unpack C:\Users\Gaurav\AppData\Roaming\npm-cache\grunt-contrib-watch\0.6.1\package.tgz
+771 verbose tar unpacking to C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\.staging\grunt-contrib-watch-6ffa244178e0d234016c1a4f14054fc4
+772 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\.staging\grunt-contrib-watch-6ffa244178e0d234016c1a4f14054fc4 is being purged
+773 verbose gentlyRm don't care about contents; nuking C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\.staging\grunt-contrib-watch-6ffa244178e0d234016c1a4f14054fc4
+774 silly gunzTarPerm modes [ '777', '666' ]
+775 silly gunzTarPerm extractEntry package.json
+776 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+777 silly gunzTarPerm extractEntry README.md
+778 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+779 silly gunzTarPerm extractEntry LICENSE-MIT
+780 silly gunzTarPerm modified mode [ 'LICENSE-MIT', 420, 438 ]
+781 silly gunzTarPerm extractEntry tasks/watch.js
+782 silly gunzTarPerm modified mode [ 'tasks/watch.js', 420, 438 ]
+783 silly gunzTarPerm extractEntry tasks/lib/livereload.js
+784 silly gunzTarPerm modified mode [ 'tasks/lib/livereload.js', 420, 438 ]
+785 silly gunzTarPerm extractEntry tasks/lib/taskrun.js
+786 silly gunzTarPerm modified mode [ 'tasks/lib/taskrun.js', 420, 438 ]
+787 silly gunzTarPerm extractEntry tasks/lib/taskrunner.js
+788 silly gunzTarPerm modified mode [ 'tasks/lib/taskrunner.js', 420, 438 ]
+789 silly doParallel preinstall 1
+790 silly preinstall grunt-contrib-watch@0.6.1 C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\.staging\grunt-contrib-watch-6ffa244178e0d234016c1a4f14054fc4
+791 info lifecycle grunt-contrib-watch@0.6.1~preinstall: grunt-contrib-watch@0.6.1
+792 silly lifecycle grunt-contrib-watch@0.6.1~preinstall: no script for preinstall, continuing
+793 silly doReverseSerial remove 1
+794 silly remove C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\node_modules\abbrev
+795 verbose unbuild node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\node_modules\abbrev
+796 info lifecycle abbrev@1.0.7~preuninstall: abbrev@1.0.7
+797 silly lifecycle abbrev@1.0.7~preuninstall: no script for preuninstall, continuing
+798 info lifecycle abbrev@1.0.7~uninstall: abbrev@1.0.7
+799 silly lifecycle abbrev@1.0.7~uninstall: no script for uninstall, continuing
+800 verbose unbuild rmStuff abbrev@1.0.7 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+801 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\node_modules
+802 info lifecycle abbrev@1.0.7~postuninstall: abbrev@1.0.7
+803 silly lifecycle abbrev@1.0.7~postuninstall: no script for postuninstall, continuing
+804 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\node_modules\abbrev is being purged from base C:\Users\Gaurav\Desktop\Ravindra Bhawan
+805 verbose gentlyRm don't care about contents; nuking C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\node_modules\abbrev
+806 silly vacuum-fs purging C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\node_modules\abbrev
+807 silly vacuum-fs removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\node_modules
+808 silly vacuum-fs quitting because other entries in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt
+809 silly doSerial move 17
+810 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\async C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\async
+811 info lifecycle async@0.2.10~preuninstall: async@0.2.10
+812 silly lifecycle async@0.2.10~preuninstall: no script for preuninstall, continuing
+813 info lifecycle async@0.2.10~uninstall: async@0.2.10
+814 silly lifecycle async@0.2.10~uninstall: no script for uninstall, continuing
+815 verbose unbuild rmStuff async@0.2.10 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+816 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules
+817 info lifecycle async@0.2.10~postuninstall: async@0.2.10
+818 silly lifecycle async@0.2.10~postuninstall: no script for postuninstall, continuing
+819 info lifecycle async@0.2.10~preinstall: async@0.2.10
+820 silly lifecycle async@0.2.10~preinstall: no script for preinstall, continuing
+821 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\faye-websocket C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\faye-websocket
+822 info lifecycle faye-websocket@0.4.4~preuninstall: faye-websocket@0.4.4
+823 silly lifecycle faye-websocket@0.4.4~preuninstall: no script for preuninstall, continuing
+824 info lifecycle faye-websocket@0.4.4~uninstall: faye-websocket@0.4.4
+825 silly lifecycle faye-websocket@0.4.4~uninstall: no script for uninstall, continuing
+826 verbose unbuild rmStuff faye-websocket@0.4.4 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+827 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules
+828 info lifecycle faye-websocket@0.4.4~postuninstall: faye-websocket@0.4.4
+829 silly lifecycle faye-websocket@0.4.4~postuninstall: no script for postuninstall, continuing
+830 info lifecycle faye-websocket@0.4.4~preinstall: faye-websocket@0.4.4
+831 silly lifecycle faye-websocket@0.4.4~preinstall: no script for preinstall, continuing
+832 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\glob\node_modules\inherits C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\glob\node_modules\inherits
+833 info lifecycle inherits@1.0.2~preuninstall: inherits@1.0.2
+834 silly lifecycle inherits@1.0.2~preuninstall: no script for preuninstall, continuing
+835 info lifecycle inherits@1.0.2~uninstall: inherits@1.0.2
+836 silly lifecycle inherits@1.0.2~uninstall: no script for uninstall, continuing
+837 verbose unbuild rmStuff inherits@1.0.2 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+838 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\glob\node_modules
+839 info lifecycle inherits@1.0.2~postuninstall: inherits@1.0.2
+840 silly lifecycle inherits@1.0.2~postuninstall: no script for postuninstall, continuing
+841 info lifecycle inherits@1.0.2~preinstall: inherits@1.0.2
+842 silly lifecycle inherits@1.0.2~preinstall: no script for preinstall, continuing
+843 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\lodash C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\globule\node_modules\lodash
+844 info lifecycle lodash@1.0.2~preuninstall: lodash@1.0.2
+845 silly lifecycle lodash@1.0.2~preuninstall: no script for preuninstall, continuing
+846 info lifecycle lodash@1.0.2~uninstall: lodash@1.0.2
+847 silly lifecycle lodash@1.0.2~uninstall: no script for uninstall, continuing
+848 verbose unbuild rmStuff lodash@1.0.2 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+849 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules
+850 info lifecycle lodash@1.0.2~postuninstall: lodash@1.0.2
+851 silly lifecycle lodash@1.0.2~postuninstall: no script for postuninstall, continuing
+852 info lifecycle lodash@1.0.2~preinstall: lodash@1.0.2
+853 silly lifecycle lodash@1.0.2~preinstall: no script for preinstall, continuing
+854 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\glob\node_modules\graceful-fs C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\graceful-fs
+855 info lifecycle graceful-fs@1.2.3~preuninstall: graceful-fs@1.2.3
+856 silly lifecycle graceful-fs@1.2.3~preuninstall: no script for preuninstall, continuing
+857 info lifecycle graceful-fs@1.2.3~uninstall: graceful-fs@1.2.3
+858 silly lifecycle graceful-fs@1.2.3~uninstall: no script for uninstall, continuing
+859 verbose unbuild rmStuff graceful-fs@1.2.3 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+860 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\glob\node_modules
+861 info lifecycle graceful-fs@1.2.3~postuninstall: graceful-fs@1.2.3
+862 silly lifecycle graceful-fs@1.2.3~postuninstall: no script for postuninstall, continuing
+863 info lifecycle graceful-fs@1.2.3~preinstall: graceful-fs@1.2.3
+864 silly lifecycle graceful-fs@1.2.3~preinstall: no script for preinstall, continuing
+865 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\lodash C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\lodash
+866 info lifecycle lodash@2.4.2~preuninstall: lodash@2.4.2
+867 silly lifecycle lodash@2.4.2~preuninstall: no script for preuninstall, continuing
+868 info lifecycle lodash@2.4.2~uninstall: lodash@2.4.2
+869 silly lifecycle lodash@2.4.2~uninstall: no script for uninstall, continuing
+870 verbose unbuild rmStuff lodash@2.4.2 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+871 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules
+872 info lifecycle lodash@2.4.2~postuninstall: lodash@2.4.2
+873 silly lifecycle lodash@2.4.2~postuninstall: no script for postuninstall, continuing
+874 info lifecycle lodash@2.4.2~preinstall: lodash@2.4.2
+875 silly lifecycle lodash@2.4.2~preinstall: no script for preinstall, continuing
+876 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\minimatch\node_modules\lru-cache C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\lru-cache
+877 info lifecycle lru-cache@2.7.3~preuninstall: lru-cache@2.7.3
+878 silly lifecycle lru-cache@2.7.3~preuninstall: no script for preuninstall, continuing
+879 info lifecycle lru-cache@2.7.3~uninstall: lru-cache@2.7.3
+880 silly lifecycle lru-cache@2.7.3~uninstall: no script for uninstall, continuing
+881 verbose unbuild rmStuff lru-cache@2.7.3 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+882 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\minimatch\node_modules
+883 info lifecycle lru-cache@2.7.3~postuninstall: lru-cache@2.7.3
+884 silly lifecycle lru-cache@2.7.3~postuninstall: no script for postuninstall, continuing
+885 info lifecycle lru-cache@2.7.3~preinstall: lru-cache@2.7.3
+886 silly lifecycle lru-cache@2.7.3~preinstall: no script for preinstall, continuing
+887 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\noptify\node_modules\nopt
+888 info lifecycle nopt@2.0.0~preuninstall: nopt@2.0.0
+889 silly lifecycle nopt@2.0.0~preuninstall: no script for preuninstall, continuing
+890 info lifecycle nopt@2.0.0~uninstall: nopt@2.0.0
+891 silly lifecycle nopt@2.0.0~uninstall: no script for uninstall, continuing
+892 verbose unbuild rmStuff nopt@2.0.0 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+893 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules
+894 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin\nopt.cmd is being gently removed from base C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt
+895 silly gentlyRm verifying C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt is an npm working directory
+896 silly gentlyRm containing path C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt is under npm's control, in C:\Users\Gaurav\Desktop\Ravindra Bhawan
+897 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\bin\nopt.js is not under C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt
+898 silly gentlyRm verifying C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\bin\nopt.js is an npm working directory
+899 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin\nopt.cmd is under npm's control, in C:\Users\Gaurav\Desktop\Ravindra Bhawan
+900 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\bin\nopt.js is controlled by C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt
+901 verbose gentlyRm removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin\nopt.cmd with base C:\Users\Gaurav\Desktop\Ravindra Bhawan
+902 silly vacuum-fs removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin\nopt.cmd
+903 silly vacuum-fs quitting because other entries in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin
+904 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin\nopt is being gently removed from base C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt
+905 silly gentlyRm verifying C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt is an npm working directory
+906 silly gentlyRm containing path C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt is under npm's control, in C:\Users\Gaurav\Desktop\Ravindra Bhawan
+907 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\bin\nopt.js is not under C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt
+908 silly gentlyRm verifying C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\bin\nopt.js is an npm working directory
+909 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin\nopt is under npm's control, in C:\Users\Gaurav\Desktop\Ravindra Bhawan
+910 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt\bin\nopt.js is controlled by C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\nopt
+911 verbose gentlyRm removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin\nopt with base C:\Users\Gaurav\Desktop\Ravindra Bhawan
+912 silly vacuum-fs removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin\nopt
+913 silly vacuum-fs removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules\.bin
+914 silly vacuum-fs quitting because other entries in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify\node_modules
+915 info lifecycle nopt@2.0.0~postuninstall: nopt@2.0.0
+916 silly lifecycle nopt@2.0.0~postuninstall: no script for postuninstall, continuing
+917 info lifecycle nopt@2.0.0~preinstall: nopt@2.0.0
+918 silly lifecycle nopt@2.0.0~preinstall: no script for preinstall, continuing
+919 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\noptify C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\noptify
+920 info lifecycle noptify@0.0.3~preuninstall: noptify@0.0.3
+921 silly lifecycle noptify@0.0.3~preuninstall: no script for preuninstall, continuing
+922 info lifecycle noptify@0.0.3~uninstall: noptify@0.0.3
+923 silly lifecycle noptify@0.0.3~uninstall: no script for uninstall, continuing
+924 verbose unbuild rmStuff noptify@0.0.3 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+925 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules
+926 info lifecycle noptify@0.0.3~postuninstall: noptify@0.0.3
+927 silly lifecycle noptify@0.0.3~postuninstall: no script for postuninstall, continuing
+928 info lifecycle noptify@0.0.3~preinstall: noptify@0.0.3
+929 silly lifecycle noptify@0.0.3~preinstall: no script for preinstall, continuing
+930 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\minimatch\node_modules\sigmund C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\sigmund
+931 info lifecycle sigmund@1.0.1~preuninstall: sigmund@1.0.1
+932 silly lifecycle sigmund@1.0.1~preuninstall: no script for preuninstall, continuing
+933 info lifecycle sigmund@1.0.1~uninstall: sigmund@1.0.1
+934 silly lifecycle sigmund@1.0.1~uninstall: no script for uninstall, continuing
+935 verbose unbuild rmStuff sigmund@1.0.1 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+936 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\minimatch\node_modules
+937 info lifecycle sigmund@1.0.1~postuninstall: sigmund@1.0.1
+938 silly lifecycle sigmund@1.0.1~postuninstall: no script for postuninstall, continuing
+939 info lifecycle sigmund@1.0.1~preinstall: sigmund@1.0.1
+940 silly lifecycle sigmund@1.0.1~preinstall: no script for preinstall, continuing
+941 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\minimatch C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\minimatch
+942 info lifecycle minimatch@0.2.14~preuninstall: minimatch@0.2.14
+943 silly lifecycle minimatch@0.2.14~preuninstall: no script for preuninstall, continuing
+944 info lifecycle minimatch@0.2.14~uninstall: minimatch@0.2.14
+945 silly lifecycle minimatch@0.2.14~uninstall: no script for uninstall, continuing
+946 verbose unbuild rmStuff minimatch@0.2.14 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+947 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules
+948 info lifecycle minimatch@0.2.14~postuninstall: minimatch@0.2.14
+949 silly lifecycle minimatch@0.2.14~postuninstall: no script for postuninstall, continuing
+950 info lifecycle minimatch@0.2.14~preinstall: minimatch@0.2.14
+951 silly lifecycle minimatch@0.2.14~preinstall: no script for preinstall, continuing
+952 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules\glob C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\glob
+953 info lifecycle glob@3.1.21~preuninstall: glob@3.1.21
+954 silly lifecycle glob@3.1.21~preuninstall: no script for preuninstall, continuing
+955 info lifecycle glob@3.1.21~uninstall: glob@3.1.21
+956 silly lifecycle glob@3.1.21~uninstall: no script for uninstall, continuing
+957 verbose unbuild rmStuff glob@3.1.21 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+958 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule\node_modules
+959 info lifecycle glob@3.1.21~postuninstall: glob@3.1.21
+960 silly lifecycle glob@3.1.21~postuninstall: no script for postuninstall, continuing
+961 info lifecycle glob@3.1.21~preinstall: glob@3.1.21
+962 silly lifecycle glob@3.1.21~preinstall: no script for preinstall, continuing
+963 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules\globule C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\globule
+964 info lifecycle globule@0.1.0~preuninstall: globule@0.1.0
+965 silly lifecycle globule@0.1.0~preuninstall: no script for preuninstall, continuing
+966 info lifecycle globule@0.1.0~uninstall: globule@0.1.0
+967 silly lifecycle globule@0.1.0~uninstall: no script for uninstall, continuing
+968 verbose unbuild rmStuff globule@0.1.0 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+969 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze\node_modules
+970 info lifecycle globule@0.1.0~postuninstall: globule@0.1.0
+971 silly lifecycle globule@0.1.0~postuninstall: no script for postuninstall, continuing
+972 info lifecycle globule@0.1.0~preinstall: globule@0.1.0
+973 silly lifecycle globule@0.1.0~preinstall: no script for preinstall, continuing
+974 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\gaze C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\gaze
+975 info lifecycle gaze@0.5.2~preuninstall: gaze@0.5.2
+976 silly lifecycle gaze@0.5.2~preuninstall: no script for preuninstall, continuing
+977 info lifecycle gaze@0.5.2~uninstall: gaze@0.5.2
+978 silly lifecycle gaze@0.5.2~uninstall: no script for uninstall, continuing
+979 verbose unbuild rmStuff gaze@0.5.2 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+980 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules
+981 info lifecycle gaze@0.5.2~postuninstall: gaze@0.5.2
+982 silly lifecycle gaze@0.5.2~postuninstall: no script for postuninstall, continuing
+983 info lifecycle gaze@0.5.2~preinstall: gaze@0.5.2
+984 silly lifecycle gaze@0.5.2~preinstall: no script for preinstall, continuing
+985 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\debug C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\tiny-lr-fork\node_modules\debug
+986 info lifecycle debug@0.7.4~preuninstall: debug@0.7.4
+987 silly lifecycle debug@0.7.4~preuninstall: no script for preuninstall, continuing
+988 info lifecycle debug@0.7.4~uninstall: debug@0.7.4
+989 silly lifecycle debug@0.7.4~uninstall: no script for uninstall, continuing
+990 verbose unbuild rmStuff debug@0.7.4 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+991 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules
+992 info lifecycle debug@0.7.4~postuninstall: debug@0.7.4
+993 silly lifecycle debug@0.7.4~postuninstall: no script for postuninstall, continuing
+994 info lifecycle debug@0.7.4~preinstall: debug@0.7.4
+995 silly lifecycle debug@0.7.4~preinstall: no script for preinstall, continuing
+996 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules\qs C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\tiny-lr-fork\node_modules\qs
+997 info lifecycle qs@0.5.6~preuninstall: qs@0.5.6
+998 silly lifecycle qs@0.5.6~preuninstall: no script for preuninstall, continuing
+999 info lifecycle qs@0.5.6~uninstall: qs@0.5.6
+1000 silly lifecycle qs@0.5.6~uninstall: no script for uninstall, continuing
+1001 verbose unbuild rmStuff qs@0.5.6 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+1002 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\node_modules
+1003 info lifecycle qs@0.5.6~postuninstall: qs@0.5.6
+1004 silly lifecycle qs@0.5.6~postuninstall: no script for postuninstall, continuing
+1005 info lifecycle qs@0.5.6~preinstall: qs@0.5.6
+1006 silly lifecycle qs@0.5.6~preinstall: no script for preinstall, continuing
+1007 silly move C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\tiny-lr-fork
+1008 info lifecycle tiny-lr-fork@0.0.5~preuninstall: tiny-lr-fork@0.0.5
+1009 silly lifecycle tiny-lr-fork@0.0.5~preuninstall: no script for preuninstall, continuing
+1010 info lifecycle tiny-lr-fork@0.0.5~uninstall: tiny-lr-fork@0.0.5
+1011 silly lifecycle tiny-lr-fork@0.0.5~uninstall: no script for uninstall, continuing
+1012 verbose unbuild rmStuff tiny-lr-fork@0.0.5 from C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules
+1013 verbose unbuild rmStuff in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules
+1014 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin\tiny-lr-fork.cmd is being gently removed from base C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork
+1015 silly gentlyRm verifying C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork is an npm working directory
+1016 silly gentlyRm containing path C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork is under npm's control, in C:\Users\Gaurav\Desktop\Ravindra Bhawan
+1017 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\bin\tiny-lr is not under C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork
+1018 silly gentlyRm verifying C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\bin\tiny-lr is an npm working directory
+1019 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin\tiny-lr-fork.cmd is under npm's control, in C:\Users\Gaurav\Desktop\Ravindra Bhawan
+1020 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\bin\tiny-lr is controlled by C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork
+1021 verbose gentlyRm removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin\tiny-lr-fork.cmd with base C:\Users\Gaurav\Desktop\Ravindra Bhawan
+1022 silly vacuum-fs removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin\tiny-lr-fork.cmd
+1023 silly vacuum-fs quitting because other entries in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin
+1024 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin\tiny-lr-fork is being gently removed from base C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork
+1025 silly gentlyRm verifying C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork is an npm working directory
+1026 silly gentlyRm containing path C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork is under npm's control, in C:\Users\Gaurav\Desktop\Ravindra Bhawan
+1027 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\bin\tiny-lr is not under C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork
+1028 silly gentlyRm verifying C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\bin\tiny-lr is an npm working directory
+1029 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin\tiny-lr-fork is under npm's control, in C:\Users\Gaurav\Desktop\Ravindra Bhawan
+1030 silly gentlyRm C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork\bin\tiny-lr is controlled by C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\tiny-lr-fork
+1031 verbose gentlyRm removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin\tiny-lr-fork with base C:\Users\Gaurav\Desktop\Ravindra Bhawan
+1032 silly vacuum-fs removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin\tiny-lr-fork
+1033 silly vacuum-fs removing C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules\.bin
+1034 silly vacuum-fs quitting because other entries in C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch\node_modules
+1035 info lifecycle tiny-lr-fork@0.0.5~postuninstall: tiny-lr-fork@0.0.5
+1036 silly lifecycle tiny-lr-fork@0.0.5~postuninstall: no script for postuninstall, continuing
+1037 info lifecycle tiny-lr-fork@0.0.5~preinstall: tiny-lr-fork@0.0.5
+1038 silly lifecycle tiny-lr-fork@0.0.5~preinstall: no script for preinstall, continuing
+1039 silly doSerial finalize 1
+1040 silly finalize C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\grunt-contrib-watch
+1041 silly doSerial build 18
+1042 silly build async@0.2.10
+1043 info linkStuff async@0.2.10
+1044 silly linkStuff async@0.2.10 has C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules as its parent node_modules
+1045 verbose linkBins async@0.2.10
+1046 verbose linkMans async@0.2.10
+1047 silly build faye-websocket@0.4.4
+1048 info linkStuff faye-websocket@0.4.4
+1049 silly linkStuff faye-websocket@0.4.4 has C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules as its parent node_modules
+1050 verbose linkBins faye-websocket@0.4.4
+1051 verbose linkMans faye-websocket@0.4.4
+1052 silly build inherits@1.0.2
+1053 info linkStuff inherits@1.0.2
+1054 silly linkStuff inherits@1.0.2 has C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\glob\node_modules as its parent node_modules
+1055 verbose linkBins inherits@1.0.2
+1056 verbose linkMans inherits@1.0.2
+1057 silly build lodash@1.0.2
+1058 info linkStuff lodash@1.0.2
+1059 silly linkStuff lodash@1.0.2 has C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\globule\node_modules as its parent node_modules
+1060 verbose linkBins lodash@1.0.2
+1061 verbose linkMans lodash@1.0.2
+1062 silly build graceful-fs@1.2.3
+1063 info linkStuff graceful-fs@1.2.3
+1064 silly linkStuff graceful-fs@1.2.3 has C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules as its parent node_modules
+1065 verbose linkBins graceful-fs@1.2.3
+1066 verbose linkMans graceful-fs@1.2.3
+1067 silly build lodash@2.4.2
+1068 info linkStuff lodash@2.4.2
+1069 silly linkStuff lodash@2.4.2 has C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules as its parent node_modules
+1070 verbose linkBins lodash@2.4.2
+1071 verbose linkMans lodash@2.4.2
+1072 silly build lru-cache@2.7.3
+1073 info linkStuff lru-cache@2.7.3
+1074 silly linkStuff lru-cache@2.7.3 has C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules as its parent node_modules
+1075 verbose linkBins lru-cache@2.7.3
+1076 verbose linkMans lru-cache@2.7.3
+1077 silly build nopt@2.0.0
+1078 info linkStuff nopt@2.0.0
+1079 silly linkStuff nopt@2.0.0 has C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\noptify\node_modules as its parent node_modules
+1080 verbose linkBins nopt@2.0.0
+1081 verbose link bins [ { nopt: './bin/nopt.js' },
+1081 verbose link bins   'C:\\Users\\Gaurav\\Desktop\\Ravindra Bhawan\\node_modules\\noptify\\node_modules\\.bin',
+1081 verbose link bins   false ]
+1082 verbose linkMans nopt@2.0.0
+1083 verbose unlock done using C:\Users\Gaurav\AppData\Roaming\npm-cache\_locks\staging-92de958761d2b6db.lock for C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\.staging
+1084 silly rollbackFailedOptional Starting
+1085 silly rollbackFailedOptional Finishing
+1086 silly runTopLevelLifecycles Starting
+1087 silly runTopLevelLifecycles Finishing
+1088 silly install printInstalled
+1089 warn EPACKAGEJSON ravindra@0.0.1 No repository field.
+1090 verbose stack Error: ENOENT: no such file or directory, chmod 'C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\noptify\node_modules\nopt\bin\nopt.js'
+1090 verbose stack     at Error (native)
+1091 verbose cwd C:\Users\Gaurav\Desktop\Ravindra Bhawan
+1092 error Windows_NT 6.3.9600
+1093 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-contrib-watch" "--save-dev"
+1094 error node v5.5.0
+1095 error npm  v3.3.12
+1096 error path C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\noptify\node_modules\nopt\bin\nopt.js
+1097 error code ENOENT
+1098 error errno -4058
+1099 error syscall chmod
+1100 error enoent ENOENT: no such file or directory, chmod 'C:\Users\Gaurav\Desktop\Ravindra Bhawan\node_modules\noptify\node_modules\nopt\bin\nopt.js'
+1100 error enoent This is most likely not a problem with npm itself
+1100 error enoent and is related to npm not being able to find a file.
+1101 verbose exit [ -4058, true ]

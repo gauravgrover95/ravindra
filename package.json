@@ -1,0 +1,19 @@
+{
+  "name": "ravindra",
+  "version": "0.0.1",
+  "description": "Website of my homeplace",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gauravgrover95",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.4.1"
+  }
+}
