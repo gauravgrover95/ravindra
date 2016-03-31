@@ -60,6 +60,13 @@
   .google-maps {
     float: left;
   }
+
+  @media only screen and (max-width: 500px) {
+
+      .google-maps {
+        width: 100%;
+      }
+  }
 </style>
 
 <body id="myPage">
@@ -93,12 +100,11 @@
 
     if(isset($_SESSION['name'])) {
       echo "welcome " . $_SESSION['name'] . "!  <br>";
+      echo '<a class="flex-item" href="./complaint/">Complaint Box</a>';
       echo '<a class="flex-item btn-em" href="./session/unset.php">Logout</a>';
 
     } else {
-
-
-      echo "please Login properly";
+      echo "please login! <br>";
       echo '<a class="flex-item" href="./authentication/form.php">Sign Up</a>';
       echo '<a class="flex-item btn-em" href="./authentication/">Sign in</a>';
     }

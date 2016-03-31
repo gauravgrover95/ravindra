@@ -70,7 +70,7 @@
         $.post( "php/register.php", {fname: fname, lname: lname, email: email, password: password, cpassword: cpassword}, function(data) {
           alert(data);
           if(data === "Updated data successfully\nNow you may login with ur credentials") {
-            window.location.href = "../index.html";
+            window.location.href = "../index.php";
           }
         });
     }
