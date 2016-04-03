@@ -27,16 +27,13 @@
     // echo $size;
 
     $btn_disabled = '<button class="btn btn-danger disabled" title="complaint already registered">Complaint</button>';
-    $btn = '<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Complaint</button>';
-
-
-  function register_complaint() {
-    
-  }
-
-  if (isset($_GET['run'])) {
-    register_complaint();
-  }
+    $btn_washbasin = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal">Complaint</button>';
+    $btn_toilet = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal">Complaint</button>';
+    $btn_bathroom = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal">Complaint</button>';
+    $btn_watercooler = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal">Complaint</button>';
+    $btn_washing = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal">Complaint</button>';
+    $btn_geyser = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal">Complaint</button>';
+    $btn_purifier = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal">Complaint</button>';
 
 
 ?>
@@ -58,7 +55,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- W3 CSS -->
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -128,7 +125,7 @@
 												  <?php
 
                                                     $check = "washbasin";
-                                                    $button = $btn;
+                                                    $button = $btn_washbasin;
                                                     for ($i=0; $i < $size; $i++) { 
                                                         if($articles[$i] == $check) {
                                                             $button = $btn_disabled; 
@@ -147,7 +144,7 @@
                                                   <?php
 
                                                     $check = "toilet";
-                                                    $button = $btn;
+                                                    $button = $btn_toilet;
                                                     for ($i=0; $i < $size; $i++) { 
                                                         if($articles[$i] == $check) {
                                                             $button = $btn_disabled; 
@@ -166,7 +163,7 @@
                                                   <?php
 
                                                     $check = "bathroom";
-                                                    $button = $btn;
+                                                    $button = $btn_bathroom;
                                                     for ($i=0; $i < $size; $i++) { 
                                                         if($articles[$i] == $check) {
                                                             $button = $btn_disabled; 
@@ -185,7 +182,7 @@
                                                   <?php
 
                                                     $check = "watercooler";
-                                                    $button = $btn;
+                                                    $button = $btn_watercooler;
                                                     for ($i=0; $i < $size; $i++) { 
                                                         if($articles[$i] == $check) {
                                                             $button = $btn_disabled; 
@@ -204,7 +201,7 @@
                                                   <?php
 
                                                     $check = "washing";
-                                                    $button = $btn;
+                                                    $button = $btn_washing;
                                                     for ($i=0; $i < $size; $i++) { 
                                                         if($articles[$i] == $check) {
                                                             $button = $btn_disabled; 
@@ -218,12 +215,12 @@
 												</div>
 												<div class="w3-card compl-card">
                         	<img src="https://www.deadstock.co.in/content/images/thumbs/0002173_wash-basin-cabinet-wash-basin-under-over-counter-1027-circle-cera_360.png" height="60" width="100">
-												  <h3>gyser/Hot Water</h3>
+												  <h3>Geyser/Hot Water</h3>
 
                                                   <?php
 
                                                     $check = "geyser";
-                                                    $button = $btn;
+                                                    $button = $btn_geyser;
                                                     for ($i=0; $i < $size; $i++) { 
                                                         if($articles[$i] == $check) {
                                                             $button = $btn_disabled; 
@@ -242,7 +239,7 @@
                                                   <?php
 
                                                     $check = "purifier";
-                                                    $button = $btn;
+                                                    $button = $btn_purifier;
                                                     for ($i=0; $i < $size; $i++) { 
                                                         if($articles[$i] == $check) {
                                                             $button = $btn_disabled; 
@@ -260,43 +257,64 @@
             </div>
         </div>
         <!-- /#page-content-wrapper -->
-
     </div>
     <!-- /#wrapper -->
 
 
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Washbasin</h4>
+
+  <?php 
+
+    $all_washrooms = [
+    "Washroom 1" => 1,
+    "Washroom 2" => 2,
+    "Washroom 3" => 3,
+    "Washroom 4" => 4,
+    "Washroom 5" => 5,
+    "Washroom 6" => 6,
+    "Washroom 7" => 7
+];
+
+    $all_articles = [
+    "Washbasin" => "washbasin",
+    "Toilet" => "toilet",
+    "Bathroom" => "bathroom",
+    "Watercooler" => "watercooler",
+    "Washing Machine" => "washing",
+    "Geyser/Hot Water" => "geyser",
+    "Purifier" => "purifier"
+];
+
+    foreach ($all_washrooms as $wkey => $wvalue) {
+        foreach ($all_articles as $key => $value) {
+
+            echo '<div class="modal fade" id="' . $value . '-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">' . $key . '</h4>
+            </div>
+            <div class="modal-body">
+            <form method="post" action="../php/register-complaint.php">
+            <input type="hidden" name="washroom" value="' . $wvalue . '">
+            <input type="hidden" name="article" value="' . $value . '">
+                <textarea placeholder="Enter your complaint here" name="complaint"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <input type="submit" class="btn btn-primary submit" name="Submit">
+            </form>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-	        <textarea placeholder="Enter your complaint here"></textarea>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <a href='index.php?run=true'>
-        	<button class="btn btn-primary submit">Submit</button>
-        </a>
-        </div>
-      </div>
-    </div>
-  </div>
+      </div>';
+
+        }
+    }
 
 
-    <?php 
-        $name = "Gaurav";
-
-    ?>
-
-
-    <?php 
-        echo "acnksd kd nd nldk";
-        // echo $name;
-    ?>
+  ?>
 
 
     <!-- jQuery -->
@@ -305,13 +323,13 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Menu Toggle Script -->
+    <!-- Menu Toggle Script 
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-    </script>
+    </script> -->
 
 </body>
 

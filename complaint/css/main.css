@@ -141,6 +141,7 @@
 }
 
 .compl-card button {
+    margin-top: 10px;
     float: right;
 }
 
@@ -179,4 +180,8 @@
 
 .modal-body textarea:focus{
     border: none;
+}
+
+.modal-footer .submit {
+    margin: 0 4px;
 }

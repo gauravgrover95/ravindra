@@ -1,0 +1,167 @@
+	
+  .topnav {
+    /*background: #14462B !important;*/
+    background: #3B7935 !important;
+    position: static;
+    height: auto;
+  }
+
+  .logo {
+    width: 160px;
+    height: 60px;
+  }
+
+  .left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+	.flex-item {
+
+		flex: 1;
+	}
+
+  .btn-em {
+    border: 1px solid white;
+    background: white;
+    color: black;
+
+  }
+  .google-maps {
+    float: left;
+  }
+
+  @media only screen and (max-width: 500px) {
+
+      .google-maps {
+        width: 100%;
+      }
+  }
+
+/*description*/
+
+  .desc {
+    background: white;
+    background: #f7f7f7;
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    padding: 30px 10px;
+
+  }
+
+  .desc h2 {
+    position: relative;
+    top: -10px;
+    text-align: center;
+  }
+
+  .desc p {
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+
+
+  .facil {
+    height: 600px;
+  }
+
+  .facil h2 {
+    text-align: center;
+  }
+
+  .facil .container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+  }
+
+  .facil .card {
+    height: 180px;
+    width: 180px;
+    float: left;
+    margin-right: 45px;
+  }
+
+    /* Content */
+
+  .gallery {
+    background: #f7f7f7;
+    height: 600px;
+    padding: 40px 80px;
+  }
+
+  .galh2 {
+    text-align: center;
+  }
+
+  .docs-pictures {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+
+  .docs-pictures > li {
+    float: left;
+    width: 19.5%;
+    height: 19.5%;
+    margin: 0 -1px -1px 0;
+    border: 1px solid transparent;
+    overflow: hidden;
+  }
+
+  .docs-pictures > li > img {
+    width: 100%;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
+
+  .CW {
+    background: #3B7935;
+    color: white;
+    position: relative;
+/*    top: 400px;*/
+    padding: 0 !important;
+  }
+
+  .CW-port h2{
+    text-align: center;
+  }
+
+  .CW-port h4 {
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .CW-port footer h4{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .team {
+    background: #efeded;
+  }
+  .team h2 {
+    margin-bottom: 0;
+  }
+  .team p {
+    margin-top:0;
+    margin-bottom: 32px; 
+  }
+
+  footer {
+    background: #3B7935 !important;
+  }
