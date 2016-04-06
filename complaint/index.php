@@ -118,7 +118,7 @@
                         <!-- <h1 class="heading">Washroom 1</h1> -->
 
                         <div class="w3-card compl-card">
-                        	<img src="https://www.deadstock.co.in/content/images/thumbs/0002173_wash-basin-cabinet-wash-basin-under-over-counter-1027-circle-cera_360.png" height="60" width="100">
+                        	<img src="../img/complaint/washbasin.png" height="60" width="80">
 												  <h3>Wash-basin</h3>
 
 
@@ -138,8 +138,8 @@
 
 												</div>
 												<div class="w3-card compl-card">
-                        	<img src="https://www.deadstock.co.in/content/images/thumbs/0002173_wash-basin-cabinet-wash-basin-under-over-counter-1027-circle-cera_360.png" height="60" width="100">
-												  <h3>toilet</h3>
+                        	<img src="../img/complaint/toilet.png" height="60" width="80">
+												  <h3>Toilet</h3>
 
                                                   <?php
 
@@ -157,8 +157,8 @@
 
 												</div>
 												<div class="w3-card compl-card">
-                        	<img src="https://www.deadstock.co.in/content/images/thumbs/0002173_wash-basin-cabinet-wash-basin-under-over-counter-1027-circle-cera_360.png" height="60" width="100">
-												  <h3>bathroom</h3>
+                        	<img src="../img/complaint/shower.png" height="60" width="80">
+												  <h3>Bathroom</h3>
 
                                                   <?php
 
@@ -176,8 +176,8 @@
 
 												</div>
 												<div class="w3-card compl-card">
-                        	<img src="https://www.deadstock.co.in/content/images/thumbs/0002173_wash-basin-cabinet-wash-basin-under-over-counter-1027-circle-cera_360.png" height="60" width="100">
-												  <h3>watercooler</h3>
+                        	<img src="../img/complaint/watercooler.png" height="60" width="80">
+												  <h3>Watercooler</h3>
 
                                                   <?php
 
@@ -195,8 +195,8 @@
 
 												</div>
 												<div class="w3-card compl-card">
-                        	<img src="https://www.deadstock.co.in/content/images/thumbs/0002173_wash-basin-cabinet-wash-basin-under-over-counter-1027-circle-cera_360.png" height="60" width="100">
-												  <h3>washing machine</h3>
+                        	<img src="../img/complaint/wash.png" height="60" width="80">
+												  <h3>Washing Machine</h3>
 
                                                   <?php
 
@@ -214,7 +214,7 @@
 
 												</div>
 												<div class="w3-card compl-card">
-                        	<img src="https://www.deadstock.co.in/content/images/thumbs/0002173_wash-basin-cabinet-wash-basin-under-over-counter-1027-circle-cera_360.png" height="60" width="100">
+                        	<img src="../img/complaint/geyser.png" height="60" width="80">
 												  <h3>Geyser/Hot Water</h3>
 
                                                   <?php
@@ -233,7 +233,7 @@
 
 												</div>
 												<div class="w3-card compl-card">
-                        	<img src="https://www.deadstock.co.in/content/images/thumbs/0002173_wash-basin-cabinet-wash-basin-under-over-counter-1027-circle-cera_360.png" height="60" width="100">
+                        	<img src="../img/complaint/purifier.png" height="60" width="80">
 												  <h3>Purifier</h3>
 
                                                   <?php

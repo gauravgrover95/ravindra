@@ -185,3 +185,7 @@
 .modal-footer .submit {
     margin: 0 4px;
 }
+
+.row img {
+    margin-right: 20px;
+}

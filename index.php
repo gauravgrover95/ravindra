@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Demo W3.CSS</title>
+<title>Ravindra Bhawan | IIT Roorkee</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
@@ -53,22 +53,30 @@
 </nav>
 
 <!-- Topnav -->
-<div class="w3-topnav topnav w3-center w3-theme w3-card-4 w3-top" style="display: flex">
+<div class="w3-topnav topnav w3-center w3-theme w3-card-4 w3-top">
+
   <div class="left">
-  <img src="img/logo-placeholder.jpg" class="logo">
+    <h2>Ravindra Bhawan</h2>
   </div>
-  <h2 class="flex-item" style="display: inline;margin-left: 8%;">Ravindra Bhawan</h2>
+
+
   <div class="right">
   <?php 
     session_start();
 
     if(isset($_SESSION['name'])) {
+      $name = $_SESSION['name'];
       echo "welcome " . $_SESSION['name'] . "!  <br>";
-      echo '<a class="flex-item" href="./complaint/">Complaint Box</a>';
+      if($name == 'admin') {
+        echo '<a class="flex-item" href="./admin/">Complaints</a>';
+        echo '<a class="flex-item" href="./complaint/">Complaint Box</a>';
+      }else {
+        echo '<a class="flex-item" href="./complaint/">Complaint Box</a>';
+      }
       echo '<a class="flex-item btn-em" href="./session/unset.php">Logout</a>';
 
     } else {
-      echo "please login! <br>";
+      echo '<p style="margin: 0">Please Login</p>';
       echo '<a class="flex-item" href="./authentication/form.php">Sign Up</a>';
       echo '<a class="flex-item btn-em" href="./authentication/">Sign in</a>';
     }
@@ -88,13 +96,13 @@
     <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
     <!-- SLIDES -->
         <div data-p="225.00" style="display: none;">
-            <img data-u="image" src="http://www.iitr.ac.in/campus_life/uploads/Image/DSC_0031.JPG" />
+            <img data-u="image" src="img/DSC_0031.JPG" />
         </div>
         <div data-p="225.00" style="display: none;">
-            <img data-u="image" src="img/gallery/gal1.jpg" />
+            <img data-u="image" src="img/IMG_20160404_151137876.jpg" />
         </div>
         <div data-p="225.00" style="display: none;">
-            <img data-u="image" src="img/watermark.jpg" />
+            <img data-u="image" src="img/IMG_20160404_151237769.jpg" />
         </div>
     </div>
     <!-- Bullet Navigator -->
@@ -127,7 +135,7 @@
 <div class="facil w3-container">
       <h2>Facilities</h2>
       
-<div class="w3-row-padding">
+<div class="w3-row-padding row">
 
 <div class="w3-col w3-container" style="width:20%">
 
@@ -135,7 +143,7 @@
   <div class="w3-card-2 card">
     <img src="img/facil/barber.jpg" alt="Person" style="width:100%">
     <div class="w3-container">
-    <p><p>
+    <h4 style="text-aling: center">Barber Shop</h4>
 
     </div>
   </div>
@@ -147,9 +155,9 @@
 
 <div class="w3-col m2 l2">
   <div class="w3-card-2 card">
-    <img src="img/facil/canteen.gif" alt="Person" style="width:100%">
+    <img src="img/facil/canteen.gif" alt="Person" style="width:100%; margin-bottom: 52px;">
     <div class="w3-container">
-    <p><p>
+    <h4>Canteen</h4>
 
     </div>
   </div>
@@ -161,9 +169,9 @@
 
 <div class="w3-col m2 l2">
   <div class="w3-card-2 card">
-    <img src="img/facil/indoorgames.jpg" alt="Person" style="width:100%">
+    <img src="img/facil/indoorgames.jpg" alt="Person" style="width:100%; margin-bottom: 60px;">
     <div class="w3-container">
-    <p><p>
+    <h4>Indoor Sports</h4>
  
     </div>
   </div>
@@ -175,9 +183,9 @@
 
 <div class="w3-col m2 l2">
   <div class="w3-card-2 card">
-    <img src="img/facil/music.jpg" alt="Person" style="width:100%">
+    <img src="img/facil/music.jpg" alt="Person" style="width:100%; margin-bottom: 50px;">
     <div class="w3-container">
-    <p><p>
+    <h4 style="position: relative; top: -37px">Music Teacher</h4>
  
     </div>
   </div>
@@ -191,7 +199,7 @@
   <div class="w3-card-2 card">
     <img src="img/facil/out.png" alt="Person" style="width:100%">
     <div class="w3-container">
-    <p><p>
+    <h4 style="position: relative; top: -8px;">Sports Ground</h4>
  
     </div>
   </div>
@@ -201,7 +209,7 @@
 </div> <!-- first row end -->
 
 
-<div class="w3-row-padding" style="margin-top: 20px;">
+<div class="w3-row-padding row" style="margin-top: 90px;">
   
 
 
@@ -209,9 +217,9 @@
 
 <div class="w3-col m2 l2">
   <div class="w3-card-2 card">
-    <img src="img/facil/stationary.jpg" alt="Person" style="width:100%">
+    <img src="img/facil/stationary.jpg" alt="Person" style="width:100%; margin-bottom: 15px;">
     <div class="w3-container">
-    <p><p>
+    <h4>Stationary Shop</h4>
  
     </div>
   </div>
@@ -223,9 +231,9 @@
 
 <div class="w3-col m2 l2">
   <div class="w3-card-2 card">
-    <img src="img/facil/str.jpg" alt="Person" style="width:100%">
+    <img src="img/facil/str.jpg" alt="Person" style="width:100%; margin-bottom: 5px;">
     <div class="w3-container">
-    <p><p>
+    <h4>Bhawan Gym</h4>
  
     </div>
   </div>
@@ -237,9 +245,9 @@
 
 <div class="w3-col m2 l2">
   <div class="w3-card-2 card">
-    <img src="img/facil/tailor.jpg" alt="Person" style="width:100%">
+    <img src="img/facil/tailor.jpg" alt="Person" style="width:100%; margin-bottom: 25px;">
     <div class="w3-container">
-    <p><p>
+    <h4>Tailor Shop</h4>
  
     </div>
   </div>
@@ -251,9 +259,9 @@
 
 <div class="w3-col m2 l2">
   <div class="w3-card-2 card">
-    <img src="img/facil/tv.png" alt="Person" style="width:100%">
+    <img src="img/facil/tv.png" alt="Person" style="width:100%; margin-bottom: 40px;">
     <div class="w3-container">
-    <p><p>
+    <h4>TV Room</h4>
  
     </div>
   </div>
@@ -265,9 +273,9 @@
 
 <div class="w3-col m2 l2">
   <div class="w3-card-2 card">
-    <img src="img/facil/wash.jpg" alt="Person" style="width:100%">
+    <img src="img/facil/wash.jpg" alt="Person" style="width:100%; margin-bottom: 30px;">
     <div class="w3-container">
-    <p><p>
+    <h4 style="width: 130%;">Washing Machine</h4>
  
     </div>
   </div>
@@ -421,12 +429,12 @@ Since then Ravindra Bhawan has always occupied an important place among all the 
 <!-- <iframe class="google-maps" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="20%" height="220" src="https://maps.google.com/maps?hl=en&q=Ravindra Bhawan IIT Roorkee&ie=UTF8&t=roadmap&z=10&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com"><a></small></div><div><small><a href="http://googlemapsgenerator.com">googlemapsgenerator.com</a></small></div></iframe> -->
 
   <h4>Follow Us</h4>
-  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Rss"><i class="fa fa-rss"></i></a>
-  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" target="_blank" href="http://www.iitr.ac.in" title="Rss"><i class="fa fa-rss"></i></a>
+  <a class="w3-btn-floating w3-teal" target="_blank" href="https://www.facebook.com/groups/RavindraBhawan14/" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <!-- <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
   <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>© Copyright whatever</p>     
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a> -->
+  <p>&copy; Copyright 2016</p>     
 
   <div style="position:relative;bottom:103px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal">Go To Top</span>   
