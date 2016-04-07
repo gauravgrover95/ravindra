@@ -1,39 +1,130 @@
 <?php 
 
+    session_start();
+    if(!isset($_SESSION['name']) || !isset($_SESSION['enroll'])) {
+
+        $message = "You need to login to access this area Click <a href='../authentication'>here</a> to sign in";
+        exit($message);
+    }
+
     require "../authentication/php/connection-to-db.php";
 
+    $enroll = $_SESSION['enroll'];
+
+    $all_washrooms = [
+        "Washroom 1" => 1,
+        "Washroom 2" => 2,
+        "Washroom 3" => 3,
+        "Washroom 4" => 4,
+        "Washroom 5" => 5,
+        "Washroom 6" => 6,
+        "Washroom 7" => 7,
+        "Washroom 8" => 8,
+        "Washroom 9" => 9,
+        "Washroom 10" => 10,
+        "Washroom 11" => 11,
+        "Washroom 12" => 12,
+        "Washroom 13" => 13,
+        "Washroom 14" => 14,
+        "Washroom 15" => 15,
+        "Washroom 16" => 16,
+        "Washroom 17" => 17,
+        "Washroom 18" => 18,
+    ];
+
+    $all_articles = [
+        "Washbasin" => "washbasin", // 1
+        "Toilet" => "toilet",       // 2
+        "Bathroom" => "bathroom",   // 3
+        "Watercooler" => "watercooler", // 4
+        "Washing Machine" => "washing", // 5
+        "Geyser/Hot Water" => "geyser", // 6
+        "Purifier" => "purifier" // 7
+    ];
+
+
+    $complaints = array(array());
 
     $query  = "SELECT * FROM complaint" ;
 
     $result = mysql_query($query);
-
-    $articles = array();
+    
 
     $i = 0;
-
+    $k = 0;
     while($row = mysql_fetch_array($result)) {
+            if($row[2] == 'washbasin') {
+                $k = 0;
+            }elseif ($row[2] == 'toilet') {
+                $k = 1;
+            }elseif ($row[2] == 'bathroom') {
+                $k = 2;
+            }elseif ($row[2] == 'watercooler') {
+                $k = 3;
+            }elseif ($row[2] == 'washing') {
+                $k = 4;
+            }elseif ($row[2] == 'geyser') {
+                $k = 5;
+            }elseif ($row[2] == 'purifier') {
+                $k = 6;
+            }
 
-            $articles[$i] = $row[2];
+
+
+
+            $complaints[$row[1]-1][$k] = 'faulty';
             $i = $i + 1;
     }
 
 
-    // for($i = 0; $i < 2; $i++) {
-    //     echo $articles[$i];
-    //     echo "\n";
-    // }
+
+
 
     $size = count($articles);
-    // echo $size;
+    $wsize = count($all_washrooms);
+    $asize = count($all_articles);
 
+$btn = array(
+
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-1">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-1">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-1">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-1">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-1">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-1">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-1">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-2">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-2">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-2">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-2">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-2">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-2">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-2">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-3">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-3">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-3">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-3">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-3">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-3">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-3">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-4">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-4">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-4">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-4">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-4">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-4">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-4">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-5">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-5">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-5">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-5">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-5">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-5">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-5">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-6">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-6">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-6">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-6">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-6">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-6">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-6">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-7">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-7">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-7">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-7">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-7">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-7">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-7">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-8">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-8">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-8">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-8">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-8">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-8">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-8">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-9">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-9">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-9">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-9">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-9">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-9">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-9">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-10">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-10">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-10">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-10">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-10">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-10">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-10">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-11">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-11">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-11">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-11">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-11">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-11">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-11">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-12">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-12">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-12">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-12">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-12">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-12">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-12">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-13">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-13">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-13">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-13">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-13">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-13">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-13">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-14">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-14">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-14">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-14">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-14">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-14">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-14">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-15">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-15">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-15">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-15">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-15">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-15">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-15">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-16">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-16">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-16">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-16">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-16">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-16">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-16">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-17">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-17">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-17">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-17">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-17">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-17">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-17">Complaint</button>'),
+
+    array('<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal-18">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal-18">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal-18">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal-18">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal-18">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal-18">Complaint</button>', '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal-18">Complaint</button>'),
+
+    );
     $btn_disabled = '<button class="btn btn-danger disabled" title="complaint already registered">Complaint</button>';
-    $btn_washbasin = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washbasin-modal">Complaint</button>';
-    $btn_toilet = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#toilet-modal">Complaint</button>';
-    $btn_bathroom = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#bathroom-modal">Complaint</button>';
-    $btn_watercooler = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#watercooler-modal">Complaint</button>';
-    $btn_washing = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#washing-modal">Complaint</button>';
-    $btn_geyser = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#geyser-modal">Complaint</button>';
-    $btn_purifier = '<button class="btn btn-success" title="click to register complaint" data-toggle="modal" data-target="#purifier-modal">Complaint</button>';
 
 
 ?>
@@ -82,181 +173,85 @@
                     	Main Website
                     </a>
                 </li>
-                <li>
+
+                <li class="trigger-1">
                     <a href="#" class="active">Washroom 1</a>
                 </li>
-                <li>
-                    <a href="#">Washroom 2</a>
-                </li>
-                <li>
-                    <a href="#">Washroom 3</a>
-                </li>
-                <li>
-                    <a href="#">Washroom 4</a>
-                </li>
-                <li>
-                    <a href="#">Washroom 5</a>
-                </li>
-                <li>
-                    <a href="#">Washroom 6</a>
-                </li>
-                <li>
-                    <a href="#">Washroom 7</a>
-                </li>
-                <li>
-                    <a href="#">Washroom 8</a>
-                </li>
+
+                <?php 
+                    for ($i=2; $i <= $wsize; $i++) { 
+                        echo    '<li class="trigger-' . $i . '">
+                                <a href="#">Washroom ' . $i . '</a>
+                                </li>';
+                    }
+                ?>
+
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
 
+
+
+
         <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid w3-card-2">
-                <div class="row">
-                    <div class="col-lg-12 content">
-                        <!-- <h1 class="heading">Washroom 1</h1> -->
+        <?php 
 
-                        <div class="w3-card compl-card">
-                        	<img src="../img/complaint/washbasin.png" height="60" width="80">
-												  <h3>Wash-basin</h3>
+        $i = 0;
+        $j = 0;
+        $k = 0;
+
+        foreach ($all_washrooms as $wkey => $wvalue) {
+
+            $j = 0;
+            if($k == 0) {
+                echo '<div id="page-content-wrapper" class="washroom active-card washroom-' . $wvalue . '">
+                    <div class="container-fluid w3-card-2">
+                    <h2>' . $wkey . '</h2>';
+            } else {
+                echo '<div id="page-content-wrapper" class="washroom washroom-' . $wvalue . '">
+                        <div class="container-fluid w3-card-2">
+                        <h2>' . $wkey . '</h2>';
+            }
+
+            $k++;
+
+            foreach ($all_articles as $key => $value) {
+
+                   echo '<div class="row">
+                            <div class="col-lg-12 content">
+
+                                <div class="w3-card compl-card">
+                                   <img src="../img/complaint/' . $value . '.png" height="60" width="80">
+                                   <h3>' . $key . '</h3>';
 
 
-												  <?php
+                                   
 
-                                                    $check = "washbasin";
-                                                    $button = $btn_washbasin;
-                                                    for ($i=0; $i < $size; $i++) { 
-                                                        if($articles[$i] == $check) {
-                                                            $button = $btn_disabled; 
-                                                        }
-                                                    }
+                                    $check = 'faulty';
+                                    $button = $btn[$i][$j]; 
+                                    if($complaints[$i][$j] == $check) {
+                                        $button = $btn_disabled; 
+                                    }
 
-                                                    echo $button;
 
-                                                  ?>
+                                    echo $button;
 
-												</div>
-												<div class="w3-card compl-card">
-                        	<img src="../img/complaint/toilet.png" height="60" width="80">
-												  <h3>Toilet</h3>
+                                  
 
-                                                  <?php
+            echo '               </div>
+                            </div>
+                        </div>';
+            
+                $j++;
+            }
 
-                                                    $check = "toilet";
-                                                    $button = $btn_toilet;
-                                                    for ($i=0; $i < $size; $i++) { 
-                                                        if($articles[$i] == $check) {
-                                                            $button = $btn_disabled; 
-                                                        }
-                                                    }
+            echo'   </div>
+                </div>';
+            $i++;
+        }
 
-                                                    echo $button;
-
-                                                  ?>
-
-												</div>
-												<div class="w3-card compl-card">
-                        	<img src="../img/complaint/shower.png" height="60" width="80">
-												  <h3>Bathroom</h3>
-
-                                                  <?php
-
-                                                    $check = "bathroom";
-                                                    $button = $btn_bathroom;
-                                                    for ($i=0; $i < $size; $i++) { 
-                                                        if($articles[$i] == $check) {
-                                                            $button = $btn_disabled; 
-                                                        }
-                                                    }
-
-                                                    echo $button;
-
-                                                  ?> 
-
-												</div>
-												<div class="w3-card compl-card">
-                        	<img src="../img/complaint/watercooler.png" height="60" width="80">
-												  <h3>Watercooler</h3>
-
-                                                  <?php
-
-                                                    $check = "watercooler";
-                                                    $button = $btn_watercooler;
-                                                    for ($i=0; $i < $size; $i++) { 
-                                                        if($articles[$i] == $check) {
-                                                            $button = $btn_disabled; 
-                                                        }
-                                                    }
-
-                                                    echo $button;
-
-                                                  ?>
-
-												</div>
-												<div class="w3-card compl-card">
-                        	<img src="../img/complaint/wash.png" height="60" width="80">
-												  <h3>Washing Machine</h3>
-
-                                                  <?php
-
-                                                    $check = "washing";
-                                                    $button = $btn_washing;
-                                                    for ($i=0; $i < $size; $i++) { 
-                                                        if($articles[$i] == $check) {
-                                                            $button = $btn_disabled; 
-                                                        }
-                                                    }
-
-                                                    echo $button;
-
-                                                  ?>
-
-												</div>
-												<div class="w3-card compl-card">
-                        	<img src="../img/complaint/geyser.png" height="60" width="80">
-												  <h3>Geyser/Hot Water</h3>
-
-                                                  <?php
-
-                                                    $check = "geyser";
-                                                    $button = $btn_geyser;
-                                                    for ($i=0; $i < $size; $i++) { 
-                                                        if($articles[$i] == $check) {
-                                                            $button = $btn_disabled; 
-                                                        }
-                                                    }
-
-                                                    echo $button;
-
-                                                  ?>                                                  
-
-												</div>
-												<div class="w3-card compl-card">
-                        	<img src="../img/complaint/purifier.png" height="60" width="80">
-												  <h3>Purifier</h3>
-
-                                                  <?php
-
-                                                    $check = "purifier";
-                                                    $button = $btn_purifier;
-                                                    for ($i=0; $i < $size; $i++) { 
-                                                        if($articles[$i] == $check) {
-                                                            $button = $btn_disabled; 
-                                                        }
-                                                    }
-
-                                                    echo $button;
-
-                                                  ?>
-												</div>
-
-                        <!-- <a href="#menu-toggle" class="btn btn-primary submit" id="menu-toggle">Submit</a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
+        ?>
+                                          
     </div>
     <!-- /#wrapper -->
 
@@ -265,30 +260,10 @@
 
   <?php 
 
-    $all_washrooms = [
-    "Washroom 1" => 1,
-    "Washroom 2" => 2,
-    "Washroom 3" => 3,
-    "Washroom 4" => 4,
-    "Washroom 5" => 5,
-    "Washroom 6" => 6,
-    "Washroom 7" => 7
-];
-
-    $all_articles = [
-    "Washbasin" => "washbasin",
-    "Toilet" => "toilet",
-    "Bathroom" => "bathroom",
-    "Watercooler" => "watercooler",
-    "Washing Machine" => "washing",
-    "Geyser/Hot Water" => "geyser",
-    "Purifier" => "purifier"
-];
-
     foreach ($all_washrooms as $wkey => $wvalue) {
         foreach ($all_articles as $key => $value) {
 
-            echo '<div class="modal fade" id="' . $value . '-modal" role="dialog">
+        echo '<div class="modal fade" id="' . $value . '-modal-' . $wvalue . '" role="dialog">
         <div class="modal-dialog modal-md">
           <div class="modal-content">
             <div class="modal-header">
@@ -297,9 +272,13 @@
             </div>
             <div class="modal-body">
             <form method="post" action="../php/register-complaint.php">
+
             <input type="hidden" name="washroom" value="' . $wvalue . '">
             <input type="hidden" name="article" value="' . $value . '">
-                <textarea placeholder="Enter your complaint here" name="complaint"></textarea>
+            <input type="hidden" name="enroll" value="' . $enroll . '">
+            
+            <textarea placeholder="Enter your complaint here" name="complaint"></textarea>
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -330,6 +309,8 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script> -->
+
+    <script type="text/javascript" src = "js/main.js"></script>
 
 </body>
 

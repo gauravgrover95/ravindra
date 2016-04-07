@@ -17,6 +17,7 @@
 				if($query_num_rows > 0) {
 					$row = mysql_fetch_row($result);
 					$fname = $row[1];
+					$enroll = $row[5];
 
 					echo '$fname is: ' . $fname;
 					require "set.php";	

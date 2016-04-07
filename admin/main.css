@@ -21,7 +21,8 @@
 
 .body .compl-card{
 	width: 100%;
-	height: 100px;
+	height: 120px;
+	margin-bottom: 20px;
 	border-bottom: 1px solid lightgrey !important;
 }
 

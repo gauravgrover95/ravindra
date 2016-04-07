@@ -1,3 +1,27 @@
+<?php 
+
+
+	session_start();
+
+    if( (!isset($_SESSION['name'])) || ($_SESSION['name'] != 'admin') ) {
+
+        $message = "Access Restricted to this area Click <a href='../authentication'>here</a> to authenticate yourself";
+        exit($message);
+
+    } else {
+    	
+    	// echo "No Problem\n";
+    	// echo $_SESSION['name'];
+
+    	// if($_SESSION['name'] != 'admin') {
+    	// 	echo "<br>";
+    	// 	echo "session name is not admin";
+    	// }
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,14 +73,18 @@
 	    $articles = array();
 	    $complaints = array();
 	    $datetime = array();
+	    $enrolls = array();
 	    $i = 0;
 
 	    while($row = mysql_fetch_array($result)) {
+
 	    		$serial[$i] = $row[0];
 	            $washrooms[$i] = $row[1];
 	            $articles[$i] = $row[2];
 	            $complaints[$i] = $row[3];
 	            $datetime[$i] = $row[4];
+	            $enrolls = $row[5];
+
 	            $i = $i + 1;
 	    }	
 
@@ -64,13 +92,15 @@
 
 	    for ($i=0; $i < $size; $i++) { 
 			echo '<div class="compl-card">
-				<p>Complaint No: ' . ($i+1) . '<br> Washroom No: ' . $washrooms[$i] . '<br> Article: ' . $articles[$i] . '<br> Complaint: ' . $complaints[$i] . '</p> 
+				<p>Complaint No: ' . ($i+1) . '<br> Washroom No: ' . $washrooms[$i] . '<br> Article: ' . $articles[$i] . '<br> Complaint: "' . $complaints[$i] . '"<br> Date and Time: ' . $datetime[$i] . '</p> 
 				<form method="post" action="../php/delete-complaint.php">
 					<input type="hidden" name="serial" value="' . $serial[$i] . '">
 					<input type="hidden" name="datetime" value="' . $datetime[$i] . '">
 					<input type="submit" value="Done" class="btn btn-success" style="float: right;">
 				</form>
 				</div>';
+
+
 	    }
 
 	?>

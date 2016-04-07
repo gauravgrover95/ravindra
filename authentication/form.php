@@ -7,9 +7,17 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href = "css/animate1.css">
 <script type="text/javascript" src="js/jquery-1.11.3.min"></script>
+
+<style type="text/css">
+  
+  .row {
+
+    margin-bottom: 0;
+  }
+</style>
 </HEAD>
 <BODY>
-<h3 style="color: #26a69a; margin-left: 20px">User Sign Up Form!!</h3><br>
+<h3 style="color: #26a69a; margin-left: 20px; font-size: 30px;">User Sign Up Form!!</h3><br>
 <div class="row">
     <form class="col s12">
       <div class="row">
@@ -18,18 +26,27 @@
 
           <input placeholder="First Name" id="first_name" type="text" class="validate"><br>
         </div>
+
         <div class="input-field col s3">
           <input placeholder = "Last Name" id="last_name" type="text" class="validate">
           <!-- <label for="last_name">Last Name</label> -->
         </div>
       </div>
-   
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder = "Enrollment Number" id="enroll" type="text" class="validate">
+          <!-- <label for="email">Email</label> -->
+        </div>
+     </div>
+
       <div class="row">
         <div class="input-field col s6">
           <input placeholder = "Email" id="email" type="email" class="validate">
           <!-- <label for="email">Email</label> -->
         </div>
       </div>
+
    
       <div class="row">
         <div class="input-field col s6">
@@ -65,9 +82,10 @@
         var fname = $("#first_name").val(),
             lname = $("#last_name").val(),
             email = $("#email").val(),
-            password = $("#password").val();
-            cpassword = $("#cpassword").val()
-        $.post( "php/register.php", {fname: fname, lname: lname, email: email, password: password, cpassword: cpassword}, function(data) {
+            password = $("#password").val(),
+            cpassword = $("#cpassword").val(),
+            enroll = $('#enroll').val();
+        $.post( "php/register.php", {fname: fname, lname: lname, email: email, password: password, cpassword: cpassword, enroll: enroll}, function(data) {
           alert(data);
           if(data === "Updated data successfully\nNow you may login with ur credentials") {
             window.location.href = "../index.php";

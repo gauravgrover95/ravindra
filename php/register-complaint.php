@@ -1,6 +1,5 @@
 <?php 
-if(isset($_POST["complaint"], $_POST["article"], $_POST["washroom"])) {
-
+if(isset($_POST["complaint"], $_POST["article"], $_POST["washroom"], $_POST['enroll'])) {
 
     require "../authentication/php/connection-to-db.php";
 
@@ -8,11 +7,10 @@ if(isset($_POST["complaint"], $_POST["article"], $_POST["washroom"])) {
     $washroom = $_POST['washroom'];
     $article = $_POST['article'];
     $complaint = $_POST['complaint'];
+    $enroll = $_POST['enroll'];
 
-    // "', '" . '2014-12-28 12:10:53' . 
 
-
-    $query = "INSERT INTO complaint(washroom, article, complaint) VALUES(" . $washroom . ", '" . $article . "', '" . $complaint . "')";
+    $query = "INSERT INTO complaint(washroom, article, complaint, enroll) VALUES(" . $washroom . ", '" . $article . "', '" . $complaint . "', " . $enroll . ")";
 
     $run = mysql_query($query);
     

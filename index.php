@@ -99,10 +99,10 @@
             <img data-u="image" src="img/DSC_0031.JPG" />
         </div>
         <div data-p="225.00" style="display: none;">
-            <img data-u="image" src="img/IMG_20160404_151137876.jpg" />
+            <img data-u="image" src="img/IMG_20160404_151237769.jpg" />
         </div>
         <div data-p="225.00" style="display: none;">
-            <img data-u="image" src="img/IMG_20160404_151237769.jpg" />
+            <img data-u="image" src="img/IMG_20160404_151257158-min.jpg" />
         </div>
     </div>
     <!-- Bullet Navigator -->
@@ -324,8 +324,9 @@
 <div class="w3-half CW-port">
 <br>
 <h2>My Portfolio</h2>
-<h4>"Ravindra Bhawan  was established as Engineer Student's Hostel. It was inaugurated by Shri V.V.Giri, Chancellor of the then University of Roorkee (now Indian Institute of Technology Roorkee) & Governor of Uttar Pradesh on the auspicious day of Tuesday, the November 24th in the year 1959. According to hindi calendar this day was 3 Margshirsha 1881 (Saka).<br>
-Since then Ravindra Bhawan has always occupied an important place among all the hostels of this coveted campus. It has been home for all the 4th yearites till 2003. In the August of 2003 when all the hostels were jumbled, 2nd & 3rd yearites too got chance to occupy room in this centrally located hostel. It marked a phase change in Ravindra Bhawan's history. Its now colourful student community is bound to take Ravindra Bhawan to new heights. The Bhawan has been recently provided with Wi-Fi and LAN facility in each room. Cyber Cafe, Gym Room and T.T. Room facilities have been provided since 2004. The capacity of the Bhawan has been increased by 72 rooms by adding 03 new wings in August, 2007."</h4>
+<h4 id="words">I am delighted to know that the Ravindra Bhawan inmates have worked hard to revamp their own Website. This, I hope, will add value to their life and creativity during their stay at the Bhawan. At the same time, it will keep the whole institute community abreast with the activities and initiatives of the Ravindra Bhawan. While conveying my hearty wishes on this occasion to all the students, I would also like to solicit their whole hearted involvement in different activities and initiatives of the Bhawan in future.<br><br>
+It is heartening to note that the New interactive Website of Ravindra Bhawan is being launched on eve of Bhawan Day 2016. The web developer team deserves to be congratulated for their brilliant efforts. I wish all inmates of Ravindra Bhawan a homely stay in the Bhawan and prosperous and bright future. </h4>
+<br>
  <footer>
   <h4>Dr. Manoj Jain</h4><h4>Chief Warden, Ravindra Bhawan</h4>
  </footer>
@@ -341,7 +342,7 @@ Since then Ravindra Bhawan has always occupied an important place among all the 
 <!-- Team -->
 <!-- Container -->
 <div class="w3-container w3-padding-64 w3-center team">
-<h2>Bhawan Councel</h2>
+<h2>Bhawan Council</h2>
 <p>Meet Our Team</p> 
         
 <div class="w3-row test"><br>
@@ -393,27 +394,27 @@ Since then Ravindra Bhawan has always occupied an important place among all the 
   <div class="w3-row">
     <div class="w3-col m5">
       <h3>Address</h3>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  IIT Roorkee, Uttrakhand</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +91 7060334112</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  ravindrabhawan@iitr.ac.in</p>
+      <p><i class="fa fa-map-marker w3-xlarge" style="color: #3B7935;"></i>  IIT Roorkee, Uttrakhand</p>
+      <p><i class="fa fa-phone w3-xlarge" style="color: #3B7935;"></i>  +91 7060334112</p>
+      <p><i class="fa fa-envelope-o w3-xlarge" style="color: #3B7935;"></i>  ravindrabhawan@iitr.ac.in</p>
     </div>
     <div class="w3-col m7">
       <form class="w3-container">
       <div class="w3-group">      
         <input class="w3-input" style="width:100%;" type="text" required>
-        <label class="w3-label w3-validate">Name</label>
+        <label class="w3-label" style="color: #3B7935;">Name</label>
       </div>
       <div class="w3-group">      
         <input class="w3-input" style="width:100%;" type="text" required>
-        <label class="w3-label w3-validate">Email</label>
+        <label class="w3-label" style="color: #3B7935;">Email</label>
       </div>
       <div class="w3-group">      
         <textarea class="w3-input" style="width:100%;"></textarea>
-        <label class="w3-label">Subject</label>
+        <label class="w3-label" style="color: #3B7935;">Subject</label>
       </div>  
       <input class="w3-check" type="checkbox" checked="checked">
-      <label class="w3-validate">I Like it!</label>
-      <button type="button" class="w3-btn w3-right w3-theme">Send</button>
+      <label class="w3-validate" style="color: #3B7935;">I Like it!</label>
+      <button type="button" class="w3-btn w3-right" style="background: #3B7935;">Send</button>
       </form>
     </div>
   </div>
@@ -429,15 +430,15 @@ Since then Ravindra Bhawan has always occupied an important place among all the 
 <!-- <iframe class="google-maps" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="20%" height="220" src="https://maps.google.com/maps?hl=en&q=Ravindra Bhawan IIT Roorkee&ie=UTF8&t=roadmap&z=10&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com"><a></small></div><div><small><a href="http://googlemapsgenerator.com">googlemapsgenerator.com</a></small></div></iframe> -->
 
   <h4>Follow Us</h4>
-  <a class="w3-btn-floating w3-teal" target="_blank" href="http://www.iitr.ac.in" title="Rss"><i class="fa fa-rss"></i></a>
-  <a class="w3-btn-floating w3-teal" target="_blank" href="https://www.facebook.com/groups/RavindraBhawan14/" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating" style="background: #14420f;" target="_blank" href="http://www.iitr.ac.in" title="Home"><i class="fa fa-home"></i></a>
+  <a class="w3-btn-floating"  style="background: #14420f;" target="_blank" href="https://www.facebook.com/groups/RavindraBhawan14/" title="Facebook"><i class="fa fa-facebook"></i></a>
   <!-- <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
   <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
   <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a> -->
   <p>&copy; Copyright 2016</p>     
 
   <div style="position:relative;bottom:103px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal">Go To Top</span>   
+    <span class="w3-text w3-padding" style="background: #14420f;">Go To Top</span>   
     <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>        

@@ -142,13 +142,34 @@
 
   .CW-port h2{
     text-align: center;
+    font-size: 32px;
   }
 
   .CW-port h4 {
     font-size: 20px;
     text-align: justify;
-    padding: 10px;
+    padding: 16px;
+    quotes: "\201C""\201D""\2018""\2019";
+    letter-spacing: 1px;
   }
+
+  .CW-port #words:before {
+    color: #fff;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+  .CW-port #words:after {
+    color: #fff;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
 
   .CW-port footer h4{
     font-style: italic;
@@ -171,4 +192,9 @@
 
   footer {
     background: #3B7935 !important;
+  }
+
+  .address {
+    background: red;
+    font-size: 28px;
   }

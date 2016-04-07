@@ -1,5 +1,5 @@
 <?php 
-	if(isset($_POST["email"], $_POST["password"], $_POST["fname"], $_POST["lname"], $_POST["cpassword"] )) {
+	if(isset($_POST["email"], $_POST["password"], $_POST["fname"], $_POST["lname"], $_POST["cpassword"], $_POST['enroll'] )) {
 
 			require "connection-to-db.php";
 
@@ -8,6 +8,7 @@
 			$email = $_POST["email"];
 			$password = $_POST["password"];
 			$cpassword = $_POST["cpassword"];
+			$enroll = $_POST['enroll'];
 
 
 			if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
@@ -29,7 +30,7 @@
 				           	$serial = (mysql_num_rows(mysql_query("SELECT * FROM users")) + 1);
 								
 								
-								$query = "INSERT INTO users(serial, fname, lname, email, password) VALUES(" . $serial . ", '" . $fname . "', '" . $lname . "', '" . $email . "', '" . $password . "')" ;
+								$query = "INSERT INTO users(serial, fname, lname, email, password, enroll) VALUES(" . $serial . ", '" . $fname . "', '" . $lname . "', '" . $email . "', '" . $password . "', '" . $enroll . "')" ;
 					            $run = mysql_query($query);
 					            
 					            if(! $run ) {
